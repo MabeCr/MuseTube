@@ -1,0 +1,14 @@
+<iframe class="e2e-iframe-untrusted-src" width="420" height="345" [src]="sanitizedVideoURL">
+</iframe>
+
+<table style="width:100%">
+    <caption>Saved Songs</caption>
+    <tr>
+      <th>Song Title</th>
+      <th>Song Artist</th>
+    </tr>
+    <tr *ngFor="let song of songs" (click)="changeSong(song.videoID, song.startTime, song.endTime)">
+      <td>{{ song.title }}</td>
+      <td>{{ song.artist }}</td>
+    </tr>
+  </table>
