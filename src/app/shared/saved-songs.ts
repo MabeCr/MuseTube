@@ -4,7 +4,7 @@ export const SONGS: Song[] = [
     {
         title: 'Laid to Rest',
         artist: 'Lamb of God',
-        startTime: 0,
+        startTime: 1,
         endTime: 230,
         videoID: 'FNGEQmzDLR0'
     },
