@@ -14,10 +14,10 @@ export class PlayerControlsComponent implements OnInit {
   public player: any;
   public YT: any;
 
-  songs = SONGS;
+  songs: Song[] = SONGS;
 
   currentSongIndex: number;
-  currentSong: Song;
+  currentSong: Song = this.songs[0];
 
   loadable: boolean;
 
@@ -39,6 +39,9 @@ export class PlayerControlsComponent implements OnInit {
       this.YT = window['YT'];
       this.player = new window['YT'].Player('player', {
         videoId: this.videoID,
+        height: 300,
+        width: 350,
+        playerVars: {'controls': 0, 'modestbranding': 1, 'rel': 0, 'showinfo': 0},
         events: {
           'onStateChange': this.onPlayerStateChange.bind(this),
           'onError': this.onPlayerError.bind(this),
@@ -98,10 +101,27 @@ export class PlayerControlsComponent implements OnInit {
       console.log(index);
       this.currentSongIndex = index;
       this.currentSong = this.songs[index];
+      console.log(this.currentSong);
       let newVideoID = this.currentSong.videoID;
       let newStartTime = this.currentSong.startTime;
       let newEndTime = this.currentSong.endTime;
       this.player.loadVideoById({ 'videoId': newVideoID, 'startSeconds': newStartTime, 'endSeconds': newEndTime });
+    }
+  }
+
+  playPrevious() {
+    this.changeSong(this.currentSongIndex - 1);
+  }
+
+  playNext() {
+    this.changeSong(this.currentSongIndex + 1);
+  }
+
+  playPause() {
+    if (this.player.getPlayerState() == 1) { //playing
+      this.player.pauseVideo();
+    } else {
+      this.player.playVideo();
     }
   }
 

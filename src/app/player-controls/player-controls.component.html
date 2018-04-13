@@ -1,5 +1,13 @@
 <div id="player"></div>
 
+<div *ngIf="!(currentSong === undefined)" id="songInfo">
+  <h1>Now Playing: {{ currentSong.title }} by {{ currentSong.artist }}</h1>
+  <button (click)="playPrevious()"><<</button>
+  <button (click)="playPause()">Play/Pause</button>
+  <button (click)="playNext()">>></button>
+</div>
+
+
 <table style="width:100%">
     <caption>Saved Songs</caption>
     <tr>
