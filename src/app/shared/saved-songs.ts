@@ -1,81 +1,41 @@
 import { Song } from './song';
 
 export const SONGS: Song[] = [
-    {
-        title: 'Laid to Rest',
-        artist: 'Lamb of God',
-        startTime: 1,
-        endTime: 230,
-        videoID: 'FNGEQmzDLR0'
-    },
-    {
-        title: 'Hourglass',
-        artist: 'Lamb of God',
-        startTime: 230,
-        endTime: 470,
-        videoID: 'FNGEQmzDLR0'
-    },
-    {
-        title: 'Now You\'ve Got Something to Die For' ,
-        artist: 'Lamb of God',
-        startTime: 470,
-        endTime: 690,
-        videoID: 'FNGEQmzDLR0'
-    },
-    {
-        title: 'The Faded Line',
-        artist: 'Lamb of God',
-        startTime: 690,
-        endTime: 967,
-        videoID: 'FNGEQmzDLR0'
-    },
-    {
-        title: 'Omerta',
-        artist: 'Lamb of God',
-        startTime: 967,
-        endTime: 1253,
-        videoID: 'FNGEQmzDLR0'
-    },
-    {
-        title: 'Blood of the Scribe',
-        artist: 'Lamb of God',
-        startTime: 1253,
-        endTime: 1516,
-        videoID: 'FNGEQmzDLR0'
-    },
-    {
-        title: 'One Gun',
-        artist: 'Lamb of God',
-        startTime: 1516,
-        endTime: 1755,
-        videoID: 'FNGEQmzDLR0'
-    },
-    {
-        title: 'Break You',
-        artist: 'Lamb of God',
-        startTime: 1755,
-        endTime: 1971,
-        videoID: 'FNGEQmzDLR0'
-    },
-    {
-        title: 'What I\'ve Become',
-        artist: 'Lamb of God',
-        startTime: 1971,
-        endTime: 2180,
-        videoID: 'FNGEQmzDLR0'
-    },
-    {
-        title: 'Ashes of the Wake',
-        artist: 'Lamb of God',
-        startTime: 2180,
-        endTime: 2527,
-        videoID: 'FNGEQmzDLR0'
-    },
-    {
-        title: 'Remorse Is for the Dead',
-        artist: 'Lamb of God',
-        startTime: 2527,
-        endTime: 2866,
-        videoID: 'FNGEQmzDLR0'
-    }
+    { title: 'Laid to Rest', artist: 'Lamb of God', startTime: 1, endTime: 230, videoID: 'FNGEQmzDLR0' },
+    { title: 'Hourglass', artist: 'Lamb of God', startTime: 230, endTime: 470, videoID: 'FNGEQmzDLR0' },
+    { title: 'Now You\'ve Got Something to Die For', artist: 'Lamb of God', startTime: 470, endTime: 690, videoID: 'FNGEQmzDLR0' },
+    { title: 'The Faded Line', artist: 'Lamb of God', startTime: 690, endTime: 967, videoID: 'FNGEQmzDLR0' },
+    { title: 'Omerta', artist: 'Lamb of God', startTime: 967, endTime: 1253, videoID: 'FNGEQmzDLR0' },
+    { title: 'Blood of the Scribe', artist: 'Lamb of God', startTime: 1253, endTime: 1516, videoID: 'FNGEQmzDLR0' },
+    { title: 'One Gun', artist: 'Lamb of God', startTime: 1516, endTime: 1755, videoID: 'FNGEQmzDLR0' },
+    { title: 'Break You', artist: 'Lamb of God', startTime: 1755, endTime: 1971, videoID: 'FNGEQmzDLR0' },
+    { title: 'What I\'ve Become', artist: 'Lamb of God', startTime: 1971, endTime: 2180, videoID: 'FNGEQmzDLR0' },
+    { title: 'Ashes of the Wake', artist: 'Lamb of God', startTime: 2180, endTime: 2527, videoID: 'FNGEQmzDLR0' },
+    { title: 'Remorse Is for the Dead', artist: 'Lamb of God', startTime: 2527, endTime: null, videoID: 'FNGEQmzDLR0' },
+    { title: 'Shouting Fire at a Funeral', artist: 'Jeff Loomis', startTime: 1, endTime: 293, videoID: '_pDjGH8h9LI' },
+    { title: 'Opulent Maelstrom', artist: 'Jeff Loomis', startTime: 293, endTime: 661, videoID: '_pDjGH8h9LI' },
+    { title: 'Jato Unit', artist: 'Jeff Loomis', startTime: 661, endTime: 942, videoID: '_pDjGH8h9LI' },
+    { title: 'Azure Haze', artist: 'Jeff Loomis', startTime: 942, endTime: 1242, videoID: '_pDjGH8h9LI' },
+    { title: 'Cashmere Shiv', artist: 'Jeff Loomis', startTime: 1242, endTime: 1620, videoID: '_pDjGH8h9LI' },
+    { title: 'Race Against Disaster', artist: 'Jeff Loomis', startTime: 1620, endTime: 1993, videoID: '_pDjGH8h9LI' },
+    { title: 'Sacristy', artist: 'Jeff Loomis', startTime: 1993, endTime: 2283, videoID: '_pDjGH8h9LI' },
+    { title: 'Devil Theory', artist: 'Jeff Loomis', startTime: 2283, endTime: 2660, videoID: '_pDjGH8h9LI' },
+    { title: 'Miles of Machines', artist: 'Jeff Loomis', startTime: 2660, endTime: 3006, videoID: '_pDjGH8h9LI' },
+    { title: 'Departure', artist: 'Jeff Loomis', startTime: 3006, endTime: 3242, videoID: '_pDjGH8h9LI' },
+    { title: 'Omega\'s Influence', artist: 'Jeff Loomis', startTime: 3242, endTime: null, videoID: '_pDjGH8h9LI' },
+    { title: 'Electric Sunrise', artist: 'Plini', startTime: 1, endTime: 310, videoID: 'Yk6OQ9IF4Xg' },
+    { title: 'Handmade Cities', artist: 'Plini', startTime: 310, endTime: 595, videoID: 'Yk6OQ9IF4Xg' },
+    { title: 'Inhale', artist: 'Plini', startTime: 595, endTime: 894, videoID: 'Yk6OQ9IF4Xg' },
+    { title: 'Every Piece Matters', artist: 'Plini', startTime: 894, endTime: 1114, videoID: 'Yk6OQ9IF4Xg' },
+    { title: 'Pastures', artist: 'Plini', startTime: 1114, endTime: 1688, videoID: 'Yk6OQ9IF4Xg' },
+    { title: 'Here We Are Again', artist: 'Plini', startTime: 1568, endTime: 1726, videoID: 'Yk6OQ9IF4Xg' },
+    { title: 'Cascade', artist: 'Plini', startTime: 1726, endTime: 2086, videoID: 'Yk6OQ9IF4Xg' },
+    { title: 'I\'m Awake', artist: 'Intervals', startTime: null, endTime: null, videoID: 'OHvMYUR8SuE' },
+    { title: 'Sure Shot', artist: 'Intervals', startTime: null, endTime: null, videoID: '2NADqpeFguE' },
+    { title: 'Fable', artist: 'Intervals', startTime: null, endTime: null, videoID: 't8RFcWCWkcI' },
+    { title: 'Sweet Tooth', artist: 'Intervals', startTime: null, endTime: null, videoID: 'SgXZozc7nuA' },
+    { title: 'Black Box', artist: 'Intervals', startTime: null, endTime: null, videoID: 'jLhJxRrFeqk' },
+    { title: 'Slight of Hand', artist: 'Intervals', startTime: null, endTime: null, videoID: 'ZNZ-Lr2UFHo' },
+    { title: 'Meridian', artist: 'Intervals', startTime: null, endTime: null, videoID: 'nmLEg7pykKE' },
+    { title: 'Libra', artist: 'Intervals', startTime: null, endTime: null, videoID: 'Fx8c3CuUxw0' },
 ];

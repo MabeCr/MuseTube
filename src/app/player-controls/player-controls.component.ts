@@ -99,7 +99,16 @@ export class PlayerControlsComponent implements OnInit {
       let newStartTime = newSong.startTime;
       let newEndTime = newSong.endTime;
       this.currentSong = newSong;
-      this.player.loadVideoById({ 'videoId': newVideoID, 'startSeconds': newStartTime, 'endSeconds': newEndTime });
+
+      if (newStartTime === null && newEndTime === null) {
+        this.player.loadVideoById({ 'videoId': newVideoID});
+      } else if (newStartTime === null) {
+        this.player.loadVideoById({ 'videoId': newVideoID, 'endSeconds': newEndTime });
+      } else if (newEndTime === null) {
+        this.player.loadVideoById({ 'videoId': newVideoID, 'startSeconds': newStartTime});
+      } else {
+        this.player.loadVideoById({ 'videoId': newVideoID, 'startSeconds': newStartTime, 'endSeconds': newEndTime});
+      }
     }
   }
 
