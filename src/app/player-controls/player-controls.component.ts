@@ -21,6 +21,8 @@ export class PlayerControlsComponent implements OnInit {
 
   loadable: boolean;
 
+  statusString = 'Loading';
+
   constructor(private urlService: UrlService) {
   }
 
@@ -47,6 +49,7 @@ export class PlayerControlsComponent implements OnInit {
           'onError': this.onPlayerError.bind(this),
           'onReady': (e) => {
             this.loadable = true;
+            this.statusString = 'Playing';
             this.changeSong(0);
           }
         }
@@ -59,6 +62,7 @@ export class PlayerControlsComponent implements OnInit {
     switch (event.data) {
       case window['YT'].PlayerState.PLAYING:
         this.loadable = true;
+        this.statusString = 'Paused';
         // if (this.cleanTime() == 0) {
         //   console.log('started ' + this.cleanTime());
         // } else {
@@ -69,6 +73,7 @@ export class PlayerControlsComponent implements OnInit {
         if (this.player.getDuration() - this.player.getCurrentTime() != 0) {
           // console.log('paused' + ' @ ' + this.cleanTime());
         };
+        this.statusString = 'Playing';
         break;
       case window['YT'].PlayerState.ENDED:
         this.changeSong(this.currentSongIndex + 1);
@@ -119,10 +124,22 @@ export class PlayerControlsComponent implements OnInit {
 
   playPause() {
     if (this.player.getPlayerState() == 1) { //playing
+      // this.statusString = 'Paused';
       this.player.pauseVideo();
     } else {
+      // this.statusString = 'Playing';
       this.player.playVideo();
     }
   }
+
+  getString() {
+    if (this.statusString === 'Paused') { 
+      return 'Play'; //Reverse the current state to that the button reflects the correct action
+    } else {
+      return 'Pause';
+    }
+  }
+
+
 
 }

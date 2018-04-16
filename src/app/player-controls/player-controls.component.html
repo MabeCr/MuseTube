@@ -1,9 +1,9 @@
 <div id="player"></div>
 
 <div *ngIf="!(currentSong === undefined)" id="songInfo">
-  <h1>Now Playing: {{ currentSong.title }} by {{ currentSong.artist }}</h1>
+  <h1>Now {{ statusString }}: {{ currentSong.title }} by {{ currentSong.artist }}</h1>
   <button (click)="playPrevious()"><<</button>
-  <button (click)="playPause()">Play/Pause</button>
+  <button (click)="playPause()">{{ getString() }}</button>
   <button (click)="playNext()">>></button>
 </div>
 
