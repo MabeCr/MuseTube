@@ -6,17 +6,18 @@ import { AppComponent } from './app.component';
 import { PlayerControlsComponent } from './player-controls/player-controls.component';
 
 //Services
-import { UrlService } from './services/url/url.service';
+import { SongLibraryComponent } from './song-library/song-library.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlayerControlsComponent
+    PlayerControlsComponent,
+    SongLibraryComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [UrlService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

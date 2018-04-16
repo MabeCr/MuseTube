@@ -1,0 +1,11 @@
+<table style="width:100%">
+  <caption>Saved Songs</caption>
+  <tr>
+    <th>Song Title</th>
+    <th>Song Artist</th>
+  </tr>
+  <tr *ngFor="let song of songs; let i = index" (click)="changeSong(i)">
+    <td>{{ song.title }}</td>
+    <td>{{ song.artist }}</td>
+  </tr>
+</table>

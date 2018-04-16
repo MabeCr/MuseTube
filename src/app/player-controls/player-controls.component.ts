@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { UrlService } from './../services/url/url.service';
 import { Song } from './../shared/song';
 import { SONGS } from './../shared/saved-songs';
 
@@ -23,7 +22,7 @@ export class PlayerControlsComponent implements OnInit {
 
   statusString = 'Loading';
 
-  constructor(private urlService: UrlService) {
+  constructor() {
   }
 
   init() {
