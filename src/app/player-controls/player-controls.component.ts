@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Song } from './../shared/song';
 import { SongLibraryComponent } from '../song-library/song-library.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-player-controls',
@@ -19,7 +20,7 @@ export class PlayerControlsComponent implements OnInit {
 
   statusString = 'Loading';
 
-  constructor() {
+  constructor(private titleService: Title) {
   }
 
   init() {
@@ -46,6 +47,7 @@ export class PlayerControlsComponent implements OnInit {
           'onReady': (e) => {
             this.songLibrary.loadable = true;
             this.statusString = 'Playing';
+            this.titleService.setTitle(this.songLibrary.songs[0].title + ' - ' + this.songLibrary.songs[0].artist);
             this.songLibrary.changeSong(0);
           }
         }
@@ -99,7 +101,7 @@ export class PlayerControlsComponent implements OnInit {
       let newStartTime = newSong.startTime;
       let newEndTime = newSong.endTime;
       this.currentSong = newSong;
-
+      this.titleService.setTitle(this.currentSong.title + ' - ' + this.currentSong.artist);
       if (newStartTime === null && newEndTime === null) {
         this.player.loadVideoById({ 'videoId': newVideoID});
       } else if (newStartTime === null) {
@@ -122,8 +124,10 @@ export class PlayerControlsComponent implements OnInit {
 
   playPause() {
     if (this.player.getPlayerState() == 1) { //playing
+      this.titleService.setTitle('Paused: ' + this.currentSong.title + ' - ' + this.currentSong.artist);
       this.player.pauseVideo();
     } else {
+      this.titleService.setTitle(this.currentSong.title + ' - ' + this.currentSong.artist);
       this.player.playVideo();
     }
   }
