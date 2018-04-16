@@ -1,8 +1,11 @@
-<div id="player"></div>
+<div id="wrapper">
+  <div id="player"></div>
 
-<div *ngIf="!(songLibrary.currentSong === undefined)" id="songInfo">
-  <h1>Now {{ statusString }}: {{ currentSong.title }} by {{ currentSong.artist }}</h1>
-  <button (click)="playPrevious()"><<</button>
-  <button (click)="playPause()">{{ getString() }}</button>
-  <button (click)="playNext()">>></button>
+  <div *ngIf="!(songLibrary.currentSong === undefined)" id="songInfo">
+    <h1>Now {{ statusString }}: {{ currentSong.title }} by {{ currentSong.artist }}</h1>
+    <button (click)="playPrevious()">
+      <<</button>
+        <button (click)="playPause()">{{ getString() }}</button>
+        <button (click)="playNext()">>></button>
+  </div>
 </div>

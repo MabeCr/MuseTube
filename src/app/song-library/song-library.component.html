@@ -1,13 +1,15 @@
-<table style="width:100%">
-  <caption>Saved Songs</caption>
-  <tr>
-    <th>Title</th>
-    <th>Album</th>
-    <th>Artist</th>
-  </tr>
-  <tr *ngFor="let song of songs; let i = index" (click)="changeSong(i)">
-    <td>{{ song.title }}</td>
-    <td>{{ song.album }}</td>
-    <td>{{ song.artist }}</td>
-  </tr>
-</table>
+<div id="wrapper">
+  <table style="width:100%">
+    <caption>Saved Songs</caption>
+    <tr>
+      <th>Title</th>
+      <th>Album</th>
+      <th>Artist</th>
+    </tr>
+    <tr *ngFor="let song of songs; let i = index" (click)="changeSong(i)">
+      <td>{{ song.title }}</td>
+      <td>{{ song.album }}</td>
+      <td>{{ song.artist }}</td>
+    </tr>
+  </table>
+</div>

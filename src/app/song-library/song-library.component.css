@@ -1,3 +1,7 @@
+#wrapper {
+    margin: 10% 0 0 0;
+}
+
 table {
     border-collapse: collapse;
 }
@@ -9,4 +13,5 @@ table, th, td {
 
 tr :hover {
     background: yellow;
+    cursor: pointer;
 }
