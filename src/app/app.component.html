@@ -1,2 +1,2 @@
-<app-player-controls></app-player-controls>
-<app-song-library></app-song-library>
+<app-player-controls #playerControls [songLibrary]="songLibrary"></app-player-controls>
+<app-song-library #songLibrary [playerControls]="playerControls"></app-song-library>

@@ -5,16 +5,3 @@
 #songInfo {
     float: right;
 }
-
-table {
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid black;
-    text-align: center;
-}
-
-tr :hover {
-    background: yellow;
-}

@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Song } from './../shared/song';
-import { SONGS } from './../shared/saved-songs';
+import { SongLibraryComponent } from '../song-library/song-library.component';
 
 @Component({
   selector: 'app-player-controls',
@@ -9,16 +9,13 @@ import { SONGS } from './../shared/saved-songs';
 })
 export class PlayerControlsComponent implements OnInit {
 
+  @Input() songLibrary: SongLibraryComponent
+
   public videoID = '';
   public player: any;
   public YT: any;
 
-  songs: Song[] = SONGS;
-
-  currentSongIndex: number;
-  currentSong: Song = this.songs[0];
-
-  loadable: boolean;
+  currentSong: Song;
 
   statusString = 'Loading';
 
@@ -42,14 +39,14 @@ export class PlayerControlsComponent implements OnInit {
         videoId: this.videoID,
         height: 300,
         width: 350,
-        playerVars: {'controls': 0, 'modestbranding': 1, 'rel': 0, 'showinfo': 0},
+        playerVars: { 'controls': 1, 'modestbranding': 1, 'rel': 0, 'showinfo': 0 },
         events: {
           'onStateChange': this.onPlayerStateChange.bind(this),
           'onError': this.onPlayerError.bind(this),
           'onReady': (e) => {
-            this.loadable = true;
+            this.songLibrary.loadable = true;
             this.statusString = 'Playing';
-            this.changeSong(0);
+            this.songLibrary.changeSong(0);
           }
         }
       });
@@ -60,7 +57,7 @@ export class PlayerControlsComponent implements OnInit {
     // console.log(event)
     switch (event.data) {
       case window['YT'].PlayerState.PLAYING:
-        this.loadable = true;
+        this.songLibrary.loadable = true;
         this.statusString = 'Paused';
         // if (this.cleanTime() == 0) {
         //   console.log('started ' + this.cleanTime());
@@ -75,7 +72,7 @@ export class PlayerControlsComponent implements OnInit {
         this.statusString = 'Playing';
         break;
       case window['YT'].PlayerState.ENDED:
-        this.changeSong(this.currentSongIndex + 1);
+        this.playNext();
         break;
     };
   }
@@ -96,46 +93,37 @@ export class PlayerControlsComponent implements OnInit {
     };
   }
 
-  changeSong(index: number) {
-    if (this.loadable === true) {
-      this.loadable = false;
-      if (index > this.songs.length - 1) {
-        index = 0;
-      }
-      console.log(index);
-      this.currentSongIndex = index;
-      this.currentSong = this.songs[index];
-      console.log(this.currentSong);
-      let newVideoID = this.currentSong.videoID;
-      let newStartTime = this.currentSong.startTime;
-      let newEndTime = this.currentSong.endTime;
+  changeSong(newSong: Song) {
+    if (newSong !== undefined) {
+      let newVideoID = newSong.videoID;
+      let newStartTime = newSong.startTime;
+      let newEndTime = newSong.endTime;
+      this.currentSong = newSong;
       this.player.loadVideoById({ 'videoId': newVideoID, 'startSeconds': newStartTime, 'endSeconds': newEndTime });
     }
   }
 
   playPrevious() {
-    this.changeSong(this.currentSongIndex - 1);
+    this.songLibrary.playPrevious();
   }
 
   playNext() {
-    this.changeSong(this.currentSongIndex + 1);
+    this.songLibrary.playNext();
   }
 
   playPause() {
     if (this.player.getPlayerState() == 1) { //playing
-      // this.statusString = 'Paused';
       this.player.pauseVideo();
     } else {
-      // this.statusString = 'Playing';
       this.player.playVideo();
     }
   }
 
   getString() {
-    if (this.statusString === 'Paused') { 
+    if (this.statusString === 'Paused') {
       return 'Play'; //Reverse the current state to that the button reflects the correct action
     } else {
-      return 'Pause';
+      return 'Pause'; //Set it to pause automatically as the default on load
     }
   }
 

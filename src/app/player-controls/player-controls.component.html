@@ -1,21 +1,8 @@
 <div id="player"></div>
 
-<div *ngIf="!(currentSong === undefined)" id="songInfo">
+<div *ngIf="!(songLibrary.currentSong === undefined)" id="songInfo">
   <h1>Now {{ statusString }}: {{ currentSong.title }} by {{ currentSong.artist }}</h1>
   <button (click)="playPrevious()"><<</button>
   <button (click)="playPause()">{{ getString() }}</button>
   <button (click)="playNext()">>></button>
 </div>
-
-
-<table style="width:100%">
-    <caption>Saved Songs</caption>
-    <tr>
-      <th>Song Title</th>
-      <th>Song Artist</th>
-    </tr>
-    <tr *ngFor="let song of songs; let i = index" (click)="changeSong(i)">
-      <td>{{ song.title }}</td>
-      <td>{{ song.artist }}</td>
-    </tr>
-  </table>
