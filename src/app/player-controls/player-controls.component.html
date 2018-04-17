@@ -1,11 +1,12 @@
 <div id="wrapper">
   <div id="player"></div>
 
-  <div *ngIf="currentSong" id="songInfo">
+  <div id="songInfo">
     <h1>Now {{ statusString }}: {{ currentSong.title }} by {{ currentSong.artist }}</h1>
-    <button (click)="onPlayPrevious()">
-      <<</button>
-        <button (click)="onPlayPause()">{{ getString() }}</button>
-        <button (click)="onPlayNext()">>></button>
+    <button (click)="onPlayPrevious()"><<</button>
+    <button (click)="onPlayPause()">{{ getString() }}</button>
+    <button (click)="onPlayNext()">>></button>
+    <button (click)="onVolumeUp()">Volume Up</button>
+    <button (click)="onVolumeDown()">Volume Down</button>
   </div>
 </div>

@@ -8,11 +8,29 @@ import { SONGS } from './shared/saved-songs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'YouMuse';
+  title = 'MuseTube';
   currentSongIndex = 0;
   songs: Song[] = SONGS;
 
+  searchResults: Song[] = [];
+
   onSongChanged(newSongIndex: number) {
     this.currentSongIndex = newSongIndex;
+  }
+
+  onSearchRequested(searchString: string) {
+    this.searchResults = []; //clear the current search results
+    if (searchString !== '') {
+      for (let i = 0; i < this.songs.length; i++) {
+        let tempSong = this.songs[i];
+        if (tempSong.artist.toLowerCase().includes(searchString.toLowerCase())) {
+          this.searchResults.push(tempSong);
+        } else if (tempSong.album.toLowerCase().includes(searchString.toLowerCase())) {
+          this.searchResults.push(tempSong);
+        } else if (tempSong.title.toLowerCase().includes(searchString.toLowerCase())) {
+          this.searchResults.push(tempSong);
+        }
+      }
+    }
   }
 }

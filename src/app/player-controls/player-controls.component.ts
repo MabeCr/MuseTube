@@ -11,6 +11,7 @@ import { Title } from '@angular/platform-browser';
 export class PlayerControlsComponent implements OnInit, OnChanges {
   @Input() currentSongIndex: number = 0;
   @Input() songs: Song[] = [];
+  @Input() searchResults: Song[] = [];
   @Output() songChanged = new EventEmitter<number>();
 
   public videoID = '';
@@ -24,6 +25,9 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
   }
 
   get currentSong(): Song {
+    if (this.searchResults.length > 0) {
+      return this.searchResults[this.currentSongIndex];
+    }
     return this.songs[this.currentSongIndex];
   }
 
@@ -68,7 +72,12 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
     //If the current song index changed, play new song.
     if (this.isPlayerLoaded && changes.currentSongIndex) {
       let newSongIndex = changes.currentSongIndex.currentValue as number;
-      let currentSong = this.songs[newSongIndex];
+      let currentSong: Song;
+      if (this.searchResults.length > 0) {
+        currentSong = this.searchResults[newSongIndex];
+      } else {
+        currentSong = this.songs[newSongIndex];
+      }
       this.loadSong(currentSong);
     }
   }
@@ -155,6 +164,20 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
       this.player.pauseVideo();
     } else {
       this.player.playVideo();
+    }
+  }
+
+  onVolumeUp() {
+    let currentVolume = this.player.getVolume();
+    if (currentVolume < 100) {
+      this.player.setVolume(currentVolume + 10);
+    }
+  }
+
+  onVolumeDown() {
+    let currentVolume = this.player.getVolume();
+    if (currentVolume > 0) {
+      this.player.setVolume(currentVolume - 10);
     }
   }
 

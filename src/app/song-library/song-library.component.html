@@ -1,5 +1,8 @@
 <div id="wrapper">
-  <table style="width:100%">
+  <span>Search:</span>
+  <input #search (keyup.enter)="onSearchRequest(search.value)">
+
+  <table *ngIf="searchResults.length == 0" style="width:100%">
     <caption>Saved Songs</caption>
     <tr>
       <th>Title</th>
@@ -7,6 +10,20 @@
       <th>Artist</th>
     </tr>
     <tr *ngFor="let song of songs; let i = index" (click)="onChangeSong(i)" [ngClass]="{'current-song-row': isCurrentSong(i)}">
+      <td>{{ song.title }}</td>
+      <td>{{ song.album }}</td>
+      <td>{{ song.artist }}</td>
+    </tr>
+  </table>
+
+  <table *ngIf="searchResults.length > 0" style="width:100%">
+    <caption>Saved Songs</caption>
+    <tr>
+      <th>Title</th>
+      <th>Album</th>
+      <th>Artist</th>
+    </tr>
+    <tr *ngFor="let song of searchResults; let i = index" (click)="onChangeSong(i)" [ngClass]="{'current-song-row': isCurrentSong(i)}">
       <td>{{ song.title }}</td>
       <td>{{ song.album }}</td>
       <td>{{ song.artist }}</td>
