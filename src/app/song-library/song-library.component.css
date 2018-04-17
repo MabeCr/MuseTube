@@ -11,7 +11,11 @@ table, th, td {
     text-align: center;
 }
 
-tr :hover {
-    background: yellow;
+tr:hover td {
+    background: lightblue;
     cursor: pointer;
+}
+
+tr.current-song-row {
+    background: lightgreen;
 }

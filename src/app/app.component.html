@@ -1,2 +1,2 @@
-<app-player-controls #playerControls [songLibrary]="songLibrary"></app-player-controls>
-<app-song-library #songLibrary [playerControls]="playerControls"></app-song-library>
+<app-player-controls [currentSongIndex]="currentSongIndex" [songs]="songs" (songChanged)="onSongChanged($event)"></app-player-controls>
+<app-song-library [currentSongIndex]="currentSongIndex" [songs]="songs" (songChanged)="onSongChanged($event)"></app-song-library>

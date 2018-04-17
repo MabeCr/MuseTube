@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Song } from './shared/song';
+import { SONGS } from './shared/saved-songs';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'YouMuse';
+  currentSongIndex = 0;
+  songs: Song[] = SONGS;
+
+  onSongChanged(newSongIndex: number) {
+    this.currentSongIndex = newSongIndex;
+  }
 }

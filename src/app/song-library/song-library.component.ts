@@ -1,52 +1,33 @@
-import { Component, OnInit, Input, HostListener } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Song } from './../shared/song';
-import { SONGS } from './../shared/saved-songs';
-import { PlayerControlsComponent } from '../player-controls/player-controls.component';
 
 @Component({
   selector: 'app-song-library',
   templateUrl: './song-library.component.html',
   styleUrls: ['./song-library.component.css']
 })
-export class SongLibraryComponent implements OnInit {
+export class SongLibraryComponent {
 
-  @Input() playerControls: PlayerControlsComponent;
-
-  songs: Song[];
-
-  currentSongIndex: number;
-  currentSong: Song;
-
-  loadable: boolean;
+  @Input() currentSongIndex: number = 0;
+  @Input() songs: Song[] = [];
+  @Output() songChanged = new EventEmitter<number>();
 
   constructor() { }
 
-  ngOnInit() {
-    this.songs = SONGS;
-    this.currentSongIndex = 0;
-    this.currentSong = this.songs[0];
+  get currentSong(): Song {
+    return this.songs[this.currentSongIndex];
   }
 
-  changeSong(newSongIndex: number) {
-    if (this.loadable === true) {
-      this.loadable = false;
-      if (newSongIndex > this.songs.length - 1) {
-        newSongIndex = 0;
-      } else if (newSongIndex < 0) {
-        newSongIndex = this.songs.length - 1;
-      }
-      this.currentSongIndex = newSongIndex;
-      this.currentSong = this.songs[newSongIndex];
-      this.playerControls.changeSong(this.currentSong);
+  isCurrentSong(songIndex: number): boolean {
+    return songIndex === this.currentSongIndex;
+  }
+
+  onChangeSong(newSongIndex: number) {
+    if (newSongIndex > this.songs.length - 1) {
+      newSongIndex = 0;
+    } else if (newSongIndex < 0) {
+      newSongIndex = this.songs.length - 1;
     }
+    this.songChanged.emit(newSongIndex);
   }
-
-  playPrevious() {
-    this.changeSong(this.currentSongIndex - 1);
-  }
-
-  playNext() {
-    this.changeSong(this.currentSongIndex + 1);
-  }
-
 }

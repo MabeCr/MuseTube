@@ -6,7 +6,7 @@
       <th>Album</th>
       <th>Artist</th>
     </tr>
-    <tr *ngFor="let song of songs; let i = index" (click)="changeSong(i)">
+    <tr *ngFor="let song of songs; let i = index" (click)="onChangeSong(i)" [ngClass]="{'current-song-row': isCurrentSong(i)}">
       <td>{{ song.title }}</td>
       <td>{{ song.album }}</td>
       <td>{{ song.artist }}</td>
