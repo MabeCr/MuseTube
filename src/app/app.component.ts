@@ -11,7 +11,6 @@ export class AppComponent {
   title = 'MuseTube';
   currentSongIndex = 0;
   songs: Song[] = SONGS;
-
   searchResults: Song[] = [];
 
   onSongChanged(newSongIndex: number) {
@@ -19,8 +18,17 @@ export class AppComponent {
   }
 
   onSearchRequested(searchString: string) {
-    this.searchResults = []; //clear the current search results
-    if (searchString !== '') {
+    if (searchString === '') {
+      let currentSong = this.searchResults[this.currentSongIndex];
+      for (let i = 0; i < this.songs.length; i++) {
+        let tempSong = this.songs[i];
+        if (tempSong.title === currentSong.title && tempSong.artist === currentSong.artist) {
+          this.currentSongIndex = i;
+        }
+      }
+      this.searchResults = []; //clear the current search results
+    } else {
+      this.searchResults = []; //clear the current search results
       for (let i = 0; i < this.songs.length; i++) {
         let tempSong = this.songs[i];
         if (tempSong.artist.toLowerCase().includes(searchString.toLowerCase())) {
