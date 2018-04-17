@@ -1,6 +1,38 @@
 import { Song } from './song';
 
 export const SONGS: Song[] = [
+    //Animals as Leaders
+    // Weightless
+    { title: 'An Infinite Regression', artist: 'Animals as Leaders', album: 'Weightless', startTime: 1, endTime: 207, videoID: '_EjVmT-D3KM' },
+    { title: 'Odessa', artist: 'Animals as Leaders', album: 'Weightless', startTime: 207, endTime: 461, videoID: '_EjVmT-D3KM' },
+    { title: 'Somnarium', artist: 'Animals as Leaders', album: 'Weightless', startTime: 461, endTime: 718, videoID: '_EjVmT-D3KM' },
+    { title: 'Earth Departure', artist: 'Animals as Leaders', album: 'Weightless', startTime: 718, endTime: 1028, videoID: '_EjVmT-D3KM' },
+    { title: 'Isolated Incidents', artist: 'Animals as Leaders', album: 'Weightless', startTime: 1028, endTime: 1256, videoID: '_EjVmT-D3KM' },
+    { title: 'Do Not Go Gently', artist: 'Animals as Leaders', album: 'Weightless', startTime: 1256, endTime: 1477, videoID: '_EjVmT-D3KM' },
+    { title: 'New Eden', artist: 'Animals as Leaders', album: 'Weightless', startTime: 1477, endTime: 1639, videoID: '_EjVmT-D3KM' },
+    { title: 'Cylindrical Sea', artist: 'Animals as Leaders', album: 'Weightless', startTime: 1639, endTime: 1913, videoID: '_EjVmT-D3KM' },
+    { title: 'Espera', artist: 'Animals as Leaders', album: 'Weightless', startTime: 1913, endTime: 2045, videoID: '_EjVmT-D3KM' },
+    { title: 'To Lead You To an Overwhelming Question', artist: 'Animals as Leaders', album: 'Weightless', startTime: 2045, endTime: 2337, videoID: '_EjVmT-D3KM' },
+    { title: 'Weightless', artist: 'Animals as Leaders', album: 'Weightless', startTime: 2337, endTime: 2653, videoID: '_EjVmT-D3KM' },
+    { title: 'David', artist: 'Animals as Leaders', album: 'Weightless', startTime: 2653, endTime: 2802, videoID: '_EjVmT-D3KM' },
+
+    //Audioslave
+    //  Audioslave
+    { title: 'Cochise', artist: 'Audioslave', album: 'Audioslave', startTime: 1, endTime: 222, videoID: 'eCE2cjdnTl8' },
+    { title: 'Show Me How to Live', artist: 'Audioslave', album: 'Audioslave', startTime: 222, endTime: 498, videoID: 'eCE2cjdnTl8' },
+    { title: 'Gasoline', artist: 'Audioslave', album: 'Audioslave', startTime: 498, endTime: 776, videoID: 'eCE2cjdnTl8' },
+    { title: 'What You Are', artist: 'Audioslave', album: 'Audioslave', startTime: 776, endTime: 1024, videoID: 'eCE2cjdnTl8' },
+    { title: 'Like a Stone', artist: 'Audioslave', album: 'Audioslave', startTime: 1024, endTime: 1316, videoID: 'eCE2cjdnTl8' },
+    { title: 'Set It Off', artist: 'Audioslave', album: 'Audioslave', startTime: 1316, endTime: 1578, videoID: 'eCE2cjdnTl8' },
+    { title: 'Shadow of the Sun', artist: 'Audioslave', album: 'Audioslave', startTime: 1578, endTime: 1920, videoID: 'eCE2cjdnTl8' },
+    { title: 'I Am the Highway', artist: 'Audioslave', album: 'Audioslave', startTime: 1920, endTime: 2254, videoID: 'eCE2cjdnTl8' },
+    { title: 'Exploder', artist: 'Audioslave', album: 'Audioslave', startTime: 2254, endTime: 2459, videoID: 'eCE2cjdnTl8' },
+    { title: 'Hypnotize', artist: 'Audioslave', album: 'Audioslave', startTime: 2459, endTime: 2664, videoID: 'eCE2cjdnTl8' },
+    { title: 'Bring Em Back Alive', artist: 'Audioslave', album: 'Audioslave', startTime: 2664, endTime: 2994, videoID: 'eCE2cjdnTl8' },
+    { title: 'Light My Way', artist: 'Audioslave', album: 'Audioslave', startTime: 2994, endTime: 3295, videoID: 'eCE2cjdnTl8' },
+    { title: 'Getaway Car', artist: 'Audioslave', album: 'Audioslave', startTime: 3295, endTime: 3592, videoID: 'eCE2cjdnTl8' },
+    { title: 'The Last Remaining Light', artist: 'Audioslave', album: 'Audioslave', startTime: 3592, endTime: 3927, videoID: 'eCE2cjdnTl8' },
+
     //The Black Dahlia Murder
     //  Nocturnal
     { title: 'Everything Went Black', artist: 'The Black Dahlia Murder', album: 'Nocturnal', startTime: 1, endTime: 197, videoID: '00E6RTJh2Ro' },
@@ -60,6 +92,32 @@ export const SONGS: Song[] = [
     { title: 'From Mars', artist: 'Gojira', album: 'From Mars to Sirius', startTime: 3061, endTime: 3205, videoID: 'kMZSJCgn_K8' },
     { title: 'To Sirius', artist: 'Gojira', album: 'From Mars to Sirius', startTime: 3205, endTime: 3543, videoID: 'kMZSJCgn_K8' },
     { title: 'Global Warming', artist: 'Gojira', album: 'From Mars to Sirius', startTime: 3543, endTime: 4014, videoID: 'kMZSJCgn_K8' },
+    //  The Link [Remastered]
+    { title: 'The Link', artist: 'Gojira', album: 'The Link [Remastered]', startTime: 1, endTime: 301, videoID: 'X71__G1hFFs' },
+    { title: 'Death of Me', artist: 'Gojira', album: 'The Link [Remastered]', startTime: 301, endTime: 648, videoID: 'X71__G1hFFs' },
+    { title: 'Connected (instrumental)', artist: 'Gojira', album: 'The Link [Remastered]', startTime: 648, endTime: 727, videoID: 'X71__G1hFFs' },
+    { title: 'Remembrance', artist: 'Gojira', album: 'The Link [Remastered]', startTime: 727, endTime: 1002, videoID: 'X71__G1hFFs' },
+    { title: 'Torii (instrumental)', artist: 'Gojira', album: 'The Link [Remastered]', startTime: 1002, endTime: 1105, videoID: 'X71__G1hFFs' },
+    { title: 'Indians', artist: 'Gojira', album: 'The Link [Remastered]', startTime: 1105, endTime: 1343, videoID: 'X71__G1hFFs' },
+    { title: 'Embrace the World', artist: 'Gojira', album: 'The Link [Remastered]', startTime: 1343, endTime: 1623, videoID: 'X71__G1hFFs' },
+    { title: 'Inward Movement', artist: 'Gojira', album: 'The Link [Remastered]', startTime: 1623, endTime: 1976, videoID: 'X71__G1hFFs' },
+    { title: 'Over the Flows', artist: 'Gojira', album: 'The Link [Remastered]', startTime: 1976, endTime: 2161, videoID: 'X71__G1hFFs' },
+    { title: 'Wisdom Comes', artist: 'Gojira', album: 'The Link [Remastered]', startTime: 2161, endTime: 2306, videoID: 'X71__G1hFFs' },
+    { title: 'Dawn (instrumental)', artist: 'Gojira', album: 'The Link [Remastered]', startTime: 2306, endTime: 2825, videoID: 'X71__G1hFFs' },
+    //  The Way of All Flesh
+    { title: 'Oroborus', artist: 'Gojira', album: 'The Way of All Flesh', startTime: 1, endTime: 321, videoID: 'JuAb8gkxF-s' },
+    { title: 'Toxic Garbage Island', artist: 'Gojira', album: 'The Way of All Flesh', startTime: 321, endTime: 568, videoID: 'JuAb8gkxF-s' },
+    { title: 'A Sight to Behold', artist: 'Gojira', album: 'The Way of All Flesh', startTime: 568, endTime: 877, videoID: 'JuAb8gkxF-s' },
+    { title: 'Yama\'s Messengers', artist: 'Gojira', album: 'The Way of All Flesh', startTime: 877, endTime: 1122, videoID: 'JuAb8gkxF - s'},
+    { title: 'The Silver Cord (instrumental)', artist: 'Gojira', album: 'The Way of All Flesh', startTime: 1122, endTime: 1273, videoID: 'JuAb8gkxF-s' },
+    { title: 'All the Tears', artist: 'Gojira', album: 'The Way of All Flesh', startTime: 1273, endTime: 1494, videoID: 'JuAb8gkxF-s' },
+    { title: 'Adoration for None (ft. Randy Blythe)', artist: 'Gojira', album: 'The Way of All Flesh', startTime: 1494, endTime: 1873, videoID: 'JuAb8gkxF-s' },
+    { title: 'The Are of Dying', artist: 'Gojira', album: 'The Way of All Flesh', startTime: 1873, endTime: 2468, videoID: 'JuAb8gkxF-s' },
+    { title: 'Esoteric Surgery', artist: 'Gojira', album: 'The Way of All Flesh', startTime: 2468, endTime: 2813, videoID: 'JuAb8gkxF-s' },
+    { title: 'Vacuity', artist: 'Gojira', album: 'The Way of All Flesh', startTime: 2813, endTime: 3104, videoID: 'JuAb8gkxF-s' },
+    { title: 'Wolf Down the Earth', artist: 'Gojira', album: 'The Way of All Flesh', startTime: 3104, endTime: 3490, videoID: 'JuAb8gkxF-s' },
+    { title: 'The Way of All Flesh', artist: 'Gojira', album: 'The Way of All Flesh', startTime: 3490, endTime: 3910, videoID: 'JuAb8gkxF-s' },
+    { title: 'Hidden Song', artist: 'Gojira', album: 'The Way of All Flesh', startTime: 3910, endTime: 4094, videoID: 'JuAb8gkxF-s' },
 
     //Intervals
     //  The Shape of Color
@@ -94,6 +152,17 @@ export const SONGS: Song[] = [
     { title: 'Miles of Machines', artist: 'Jeff Loomis', album: 'Zero Order Phase', startTime: 2660, endTime: 3006, videoID: '_pDjGH8h9LI' },
     { title: 'Departure', artist: 'Jeff Loomis', album: 'Zero Order Phase', startTime: 3006, endTime: 3242, videoID: '_pDjGH8h9LI' },
     { title: 'Omega\'s Influence', artist: 'Jeff Loomis', album: 'Zero Order Phase', startTime: 3242, endTime: null, videoID: '_pDjGH8h9LI' },
+
+    //John Petrucci
+    // Suspended Animation
+    { title: 'Jaws of Life', artist: 'John Petrucci', album: 'Suspended Animation', startTime: 1, endTime: 449, videoID: 'IUj6nDs_Mqg' },
+    { title: 'Glasgow Kiss', artist: 'John Petrucci', album: 'Suspended Animation', startTime: 449, endTime: 918, videoID: 'IUj6nDs_Mqg' },
+    { title: 'Tunnel Vision', artist: 'John Petrucci', album: 'Suspended Animation', startTime: 918, endTime: 1313, videoID: 'IUj6nDs_Mqg' },
+    { title: 'Wishful Thinking', artist: 'John Petrucci', album: 'Suspended Animation', startTime: 1313, endTime: 1762, videoID: 'IUj6nDs_Mqg' },
+    { title: 'Damage Control', artist: 'John Petrucci', album: 'Suspended Animation', startTime: 1762, endTime: 2317, videoID: 'IUj6nDs_Mqg' },
+    { title: 'Curve', artist: 'John Petrucci', album: 'Suspended Animation', startTime: 2317, endTime: 2700, videoID: 'IUj6nDs_Mqg' },
+    { title: 'Lost Without You', artist: 'John Petrucci', album: 'Suspended Animation', startTime: 2700, endTime: 2996, videoID: 'IUj6nDs_Mqg' },
+    { title: 'Animate-Inanimate', artist: 'John Petrucci', album: 'Suspended Animation', startTime: 2996, endTime: 3702, videoID: 'IUj6nDs_Mqg' },
 
     //Lamb of God
     //  Ashes of the Wake
@@ -140,6 +209,37 @@ export const SONGS: Song[] = [
     { title: 'Pastures', artist: 'Plini', album: 'Handmade Cities', startTime: 1114, endTime: 1688, videoID: 'Yk6OQ9IF4Xg' },
     { title: 'Here We Are Again', artist: 'Plini', album: 'Handmade Cities', startTime: 1568, endTime: 1726, videoID: 'Yk6OQ9IF4Xg' },
     { title: 'Cascade', artist: 'Plini', album: 'Handmade Cities', startTime: 1726, endTime: 2086, videoID: 'Yk6OQ9IF4Xg' },
+
+    //Polyphia
+    // Renaissance
+    { title: 'Culture Shock', artist: 'Polyphia', album: 'Renaissance', startTime: 1, endTime: 282, videoID: 'Q2dfe2yseIM' },
+    { title: 'Light', artist: 'Polyphia', album: 'Renaissance', startTime: 282, endTime: 512, videoID: 'Q2dfe2yseIM' },
+    { title: 'Florence', artist: 'Polyphia', album: 'Renaissance', startTime: 512, endTime: 703, videoID: 'Q2dfe2yseIM' },
+    { title: 'Nightmare', artist: 'Polyphia', album: 'Renaissance', startTime: 703, endTime: 948, videoID: 'Q2dfe2yseIM' },
+    { title: 'Storm', artist: 'Polyphia', album: 'Renaissance', startTime: 948, endTime: 1158, videoID: 'Q2dfe2yseIM' },
+    { title: 'Bittersweet', artist: 'Polyphia', album: 'Renaissance', startTime: 1158, endTime: 1392, videoID: 'Q2dfe2yseIM' },
+    { title: 'Symmetry', artist: 'Polyphia', album: 'Renaissance', startTime: 1392, endTime: 1509, videoID: 'Q2dfe2yseIM' },
+    { title: 'Ivory', artist: 'Polyphia', album: 'Renaissance', startTime: 1509, endTime: 1695, videoID: 'Q2dfe2yseIM' },
+    { title: 'Paradise', artist: 'Polyphia', album: 'Renaissance', startTime: 1695, endTime: 1952, videoID: 'Q2dfe2yseIM' },
+    { title: 'Amour', artist: 'Polyphia', album: 'Renaissance', startTime: 1952, endTime: 2173, videoID: 'Q2dfe2yseIM' },
+    { title: 'Crush', artist: 'Polyphia', album: 'Renaissance', startTime: 2173, endTime: 2414, videoID: 'Q2dfe2yseIM' },
+    { title: 'Euphoria', artist: 'Polyphia', album: 'Renaissance', startTime: 2414, endTime: 2670, videoID: 'Q2dfe2yseIM' },
+
+    //Sithu Aye
+    //  Set Course for Andromeda
+    { title: 'Space Cadet', artist: 'Sithu Aye', album: 'Set Course for Andromeda', startTime: 1, endTime: 113, videoID: 'mQsAmJUCcg4-s' },
+    { title: 'Set Course for Andromeda!!!', artist: 'Sithu Aye', album: 'Set Course for Andromeda', startTime: 113, endTime: 631, videoID: 'mQsAmJUCcg4-s' },
+    { title: 'Constants and Variables', artist: 'Sithu Aye', album: 'Set Course for Andromeda', startTime: 631, endTime: 1139, videoID: 'mQsAmJUCcg4-s' },
+    { title: 'Spiral', artist: 'Sithu Aye', album: 'Set Course for Andromeda', startTime: 1139, endTime: 1399, videoID: 'mQsAmJUCcg4-s' },
+    { title: 'Beyond the Boundary', artist: 'Sithu Aye', album: 'Set Course for Andromeda', startTime: 1399, endTime: 1913, videoID: 'mQsAmJUCcg4-s' },
+    { title: 'Transient Transistors', artist: 'Sithu Aye', album: 'Set Course for Andromeda', startTime: 1913, endTime: 2389, videoID: 'mQsAmJUCcg4-s' },
+    { title: '...We Actually Made it to Andromeda!!!', artist: 'Sithu Aye', album: 'Set Course for Andromeda', startTime: 2389, endTime: 2766, videoID: 'mQsAmJUCcg4-s' },
+    { title: 'The Andromedan Pt 1: A Single Step', artist: 'Sithu Aye', album: 'Set Course for Andromeda', startTime: 2766, endTime: 3088, videoID: 'mQsAmJUCcg4-s' },
+    { title: 'The Andromedan Pt 2: Mystic Village', artist: 'Sithu Aye', album: 'Set Course for Andromeda', startTime: 3088, endTime: 3480, videoID: 'mQsAmJUCcg4-s' },
+    { title: 'The Andromedan Pt 3: Trials of the Elements', artist: 'Sithu Aye', album: 'Set Course for Andromeda', startTime: 3480, endTime: 3725, videoID: 'mQsAmJUCcg4-s' },
+    { title: 'The Andromedan Pt 4: The Darkness Within', artist: 'Sithu Aye', album: 'Set Course for Andromeda', startTime: 3725, endTime: 3884, videoID: 'mQsAmJUCcg4-s' },
+    { title: 'The Andromedan Pt 5: Rebirth', artist: 'Sithu Aye', album: 'Set Course for Andromeda', startTime: 3884, endTime: 4255, videoID: 'mQsAmJUCcg4-s' },
+    { title: 'The Andromedan Pt 6: Mother of Creation', artist: 'Sithu Aye', album: 'Set Course for Andromeda', startTime: 4255, endTime: 4509, videoID: 'mQsAmJUCcg4-s' },
 
     //Tremonti
     //  Cauterize
