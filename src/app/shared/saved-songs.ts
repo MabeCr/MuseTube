@@ -178,6 +178,29 @@ export const SONGS: Song[] = [
     { title: 'Ashes of the Wake', artist: 'Lamb of God', album: 'Ashes of the Wake', startTime: 2180, endTime: 2527, videoID: 'FNGEQmzDLR0' },
     { title: 'Remorse Is for the Dead', artist: 'Lamb of God', album: 'Ashes of the Wake', startTime: 2527, endTime: null, videoID: 'FNGEQmzDLR0' },
 
+    //Megadeth
+    //  Dystopia
+    { title: 'The Threat is Real', artist: 'Megadeth', album: 'Dystopia', startTime: null, endTime: null, videoID: '3-d6LFLpBvw' },
+    { title: 'Dystopia', artist: 'Megadeth', album: 'Dystopia', startTime: null, endTime: null, videoID: 'QrV61ATP3Ec' },
+    { title: 'Fatal Illusion', artist: 'Megadeth', album: 'Dystopia', startTime: null, endTime: null, videoID: '7MRtdd3tXI4' },
+    { title: 'Bullet to the Brain', artist: 'Megadeth', album: 'Dystopia', startTime: null, endTime: null, videoID: 'xdEPQE5tLgQ' },
+    { title: 'Post American World', artist: 'Megadeth', album: 'Dystopia', startTime: null, endTime: null, videoID: 'mEkXyEIu3OU' },
+    { title: 'Poisonous Shadows', artist: 'Megadeth', album: 'Dystopia', startTime: null, endTime: null, videoID: 'unQZvhQ9Giw' },
+    { title: 'Conquer or Die', artist: 'Megadeth', album: 'Dystopia', startTime: null, endTime: null, videoID: 'dQ_-tUKT-nY' },
+    { title: 'Lying in State', artist: 'Megadeth', album: 'Dystopia', startTime: null, endTime: null, videoID: 'yFxsnOm2kLg' },
+    { title: 'Foreign Policy', artist: 'Megadeth', album: 'Dystopia', startTime: null, endTime: null, videoID: 'xEzYIS5L-nM' },
+    //  Endgame
+    { title: 'Dialectic Chaos', artist: 'Megadeth', album: 'Endgame', startTime: null, endTime: null, videoID: 'iH0iduT0mGo' },
+    { title: 'This Day We Fight', artist: 'Megadeth', album: 'Endgame', startTime: null, endTime: null, videoID: '7F3rzYfRtus' },
+    { title: '44 Minutes', artist: 'Megadeth', album: 'Endgame', startTime: null, endTime: null, videoID: 'eU0LS_96cso' },
+    { title: '1,320\'', artist: 'Megadeth', album: 'Endgame', startTime: null, endTime: null, videoID: 'VXnu1Q8J2Io' },
+    { title: 'Bite the Hand', artist: 'Megadeth', album: 'Endgame', startTime: null, endTime: null, videoID: 'EcHz3F4O2Mw' },
+    { title: 'Bodies', artist: 'Megadeth', album: 'Endgame', startTime: null, endTime: null, videoID: 'UgT0G76iPDY' },
+    { title: 'Endgame', artist: 'Megadeth', album: 'Endgame', startTime: null, endTime: null, videoID: 'TX3PlxvdEf4' },
+    { title: 'The Hardest Part of Letting Go... Sealed With a Kiss', artist: 'Megadeth', album: 'Endgame', startTime: null, endTime: null, videoID: 'OAghPu4sEUs' },
+    { title: 'Head Crusher', artist: 'Megadeth', album: 'Endgame', startTime: null, endTime: null, videoID: 'XurU3TPHjzY' },
+    { title: 'The Right to Go Insane', artist: 'Megadeth', album: 'Endgame', startTime: 17, endTime: 234, videoID: 'm20sJNgZ17U' },
+
     //Metallica
     //  Ride the Lightning
     { title: 'Fight Fire With Fire', artist: 'Metallica', album: 'Ride the Lightning', startTime: 1, endTime: 280, videoID: 'OhT0g9jULpw' },
