@@ -21,6 +21,8 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
   isPlayerLoaded = false;
   private hasLoadedSongStarted = false;
 
+  private shuffle: boolean = false;
+
   constructor(private titleService: Title, private zone: NgZone) {
   }
 
@@ -100,7 +102,7 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
         console.log("PAUSED");
         if (this.player.getDuration() - this.player.getCurrentTime() != 0) {
           // console.log('paused' + ' @ ' + this.cleanTime());
-          
+
         };
         this.statusString = 'Paused';
         this.titleService.setTitle('Paused: ' + this.currentSong.title + ' - ' + this.currentSong.artist);
@@ -156,7 +158,22 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
   }
 
   onPlayNext() {
-    this.songChanged.emit(this.currentSongIndex + 1);
+    if (this.shuffle) {
+      let newIndex: number;
+      if (this.searchResults.length > 0) {
+        newIndex = Math.random() * (this.searchResults.length - 1);
+      } else {
+        newIndex = Math.random() * (this.songs.length - 1);
+      }
+      if (newIndex === this.currentSongIndex) {
+        newIndex = newIndex + 1;
+      }
+      console.log(this.songs.length);
+      console.log(Math.floor(newIndex));
+      this.songChanged.emit(Math.floor(newIndex));
+    } else {
+      this.songChanged.emit(this.currentSongIndex + 1);
+    }
   }
 
   onPlayPause() {
@@ -179,6 +196,10 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
     if (currentVolume > 0) {
       this.player.setVolume(currentVolume - 10);
     }
+  }
+
+  onToggleShuffle() {
+    this.shuffle = !this.shuffle;
   }
 
   getString() {

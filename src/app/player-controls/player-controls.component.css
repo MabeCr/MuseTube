@@ -9,3 +9,7 @@
 #songInfo {
     float: right;
 }
+
+button {
+    margin: auto 5px;
+}
