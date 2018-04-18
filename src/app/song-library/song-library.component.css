@@ -2,20 +2,65 @@
     margin: 1% 0 0 0;
 }
 
+#searchBox {
+    background: rgb(187, 165, 145);
+    padding: 5px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+#search {
+    font-size: 120%;
+}
+
 table {
     border-collapse: collapse;
 }
 
 table, th, td {
     border: 1px solid black;
+    text-align: left;
+}
+
+th {
+    font-size: 120%;
     text-align: center;
 }
 
 tr:hover td {
-    background: lightblue;
+    background: rgb(163, 96, 108);
     cursor: pointer;
 }
 
+tr:nth-child(even){
+    background: rgb(187, 165, 145);
+}
+
+tr:nth-child(odd){
+    background: rgb(160, 142, 126);
+}
+
 tr.current-song-row {
-    background: lightgreen;
+    background: #3cc47c;
+}
+
+td {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.playColumn {
+    text-align: center;
+}
+
+.queueColumn {
+    text-align: center;
+}
+
+.playButton {
+    margin: 0;
+}
+
+.queueButton {
+    margin: 0;
 }

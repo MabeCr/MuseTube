@@ -1,16 +1,26 @@
 <div id="wrapper">
-  <span>Search:</span>
-  <input #search (keyup.enter)="onSearchRequest(search.value)">
+  <div id="searchBox">
+    <span>Search:</span>
+    <input id="search" #search (keyup.enter)="onSearchRequest(search.value)">
+  </div>
 
   <table *ngIf="searchResults.length == 0" style="width:100%">
     <caption>Saved Songs</caption>
     <tr>
+      <th class="playColumn"></th>
+      <th class="queueColumn"></th>
       <th>Title</th>
       <th>Album</th>
       <th>Genre</th>
       <th>Artist</th>
     </tr>
-    <tr *ngFor="let song of songs; let i = index" (click)="onChangeSong(i)" [ngClass]="{'current-song-row': isCurrentSong(i)}">
+    <tr *ngFor="let song of songs; let i = index" [ngClass]="{'current-song-row': isCurrentSong(i)}">
+      <td class="playColumn">
+        <button class="playButton" (click)="onChangeSong(i)">Play</button>
+      </td>
+      <td class="queueColumn">
+        <button class="queueButton">Queue</button>
+      </td>
       <td>{{ song.title }}</td>
       <td>{{ song.album }}</td>
       <td>{{ song.genre }}</td>

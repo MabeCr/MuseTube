@@ -3,6 +3,8 @@
 
   <div id="songInfo">
     <h1>Now {{ statusString }}: {{ currentSong.title }} by {{ currentSong.artist }}</h1>
+  </div>
+  <div id="controlButtons">
     <h2 *ngIf="shuffle">Shuffle Active</h2>
     <button (click)="onPlayPrevious()"><<</button>
     <button (click)="onPlayPause()">{{ getString() }}</button>

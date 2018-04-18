@@ -8,8 +8,10 @@
 
 #songInfo {
     float: right;
+    color: #D7CEC7;
+    font-size: 130%;
 }
 
 button {
-    margin: auto 5px;
+    margin: auto 2px;
 }
