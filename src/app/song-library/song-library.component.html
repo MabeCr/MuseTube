@@ -7,11 +7,13 @@
     <tr>
       <th>Title</th>
       <th>Album</th>
+      <th>Genre</th>
       <th>Artist</th>
     </tr>
     <tr *ngFor="let song of songs; let i = index" (click)="onChangeSong(i)" [ngClass]="{'current-song-row': isCurrentSong(i)}">
       <td>{{ song.title }}</td>
       <td>{{ song.album }}</td>
+      <td>{{ song.genre }}</td>
       <td>{{ song.artist }}</td>
     </tr>
   </table>
@@ -21,11 +23,13 @@
     <tr>
       <th>Title</th>
       <th>Album</th>
+      <th>Genre</th>
       <th>Artist</th>
     </tr>
     <tr *ngFor="let song of searchResults; let i = index" (click)="onChangeSong(i)" [ngClass]="{'current-song-row': isCurrentSong(i)}">
       <td>{{ song.title }}</td>
       <td>{{ song.album }}</td>
+      <td>{{ song.genre }}</td>
       <td>{{ song.artist }}</td>
     </tr>
   </table>

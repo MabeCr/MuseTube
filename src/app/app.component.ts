@@ -37,6 +37,8 @@ export class AppComponent {
           this.searchResults.push(tempSong);
         } else if (tempSong.title.toLowerCase().includes(searchString.toLowerCase())) {
           this.searchResults.push(tempSong);
+        } else if (tempSong.genre.toLowerCase().includes(searchString.toLowerCase())) {
+          this.searchResults.push(tempSong);
         }
       }
     }
