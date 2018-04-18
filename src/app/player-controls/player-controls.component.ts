@@ -61,6 +61,7 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
           'onReady': (e) => {
             this.zone.run(() => {
               this.isPlayerLoaded = true;
+              this.player.setVolume(60);
               this.loadSong(this.currentSong);
             }
             );

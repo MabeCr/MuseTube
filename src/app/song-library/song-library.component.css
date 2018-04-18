@@ -3,17 +3,15 @@
 }
 
 #searchBox {
-    background: rgb(187, 165, 145);
+    background: rgb(160, 142, 126);
     padding: 5px;
-    width: 300px;
+    width: 250px;
     border: 1px solid black;
-}
-
-#search {
     font-size: 120%;
 }
 
 table {
+    margin-top: 15px;
     border-collapse: collapse;
 }
 
@@ -29,7 +27,6 @@ th {
 
 tr:hover td {
     background: rgb(163, 96, 108);
-    cursor: pointer;
 }
 
 tr:nth-child(even){
@@ -61,6 +58,14 @@ td {
     margin: 0;
 }
 
+.playButton:hover { 
+    cursor: pointer;
+}
+
 .queueButton {
     margin: 0;
+}
+
+.queueButton:hover {
+    cursor: pointer;
 }
