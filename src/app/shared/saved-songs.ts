@@ -34,6 +34,16 @@ export const SONGS: Song[] = [
     { title: 'The Last Remaining Light', artist: 'Audioslave', album: 'Audioslave', genre: 'Rock', startTime: 3592, endTime: 3927, videoID: 'eCE2cjdnTl8' },
 
     //The Black Dahlia Murder
+    //  Nightbringers
+    { title: 'Widowmaker', artist: 'The Black Dahlia Murder', album: 'Nightbringers', genre: 'Melodic Death Metal', startTime: 1, endTime: 201, videoID: 'VEhjvaFVrak' },
+    { title: 'Of God and Serpent, Of Spectre and Snake', artist: 'The Black Dahlia Murder', album: 'Nightbringers', genre: 'Melodic Death Metal', startTime: 201, endTime: 430, videoID: 'VEhjvaFVrak' },
+    { title: 'Matriarch', artist: 'The Black Dahlia Murder', album: 'Nightbringers', genre: 'Melodic Death Metal', startTime: 430, endTime: 634, videoID: 'VEhjvaFVrak' },
+    { title: 'Nightbringers', artist: 'The Black Dahlia Murder', album: 'Nightbringers', genre: 'Melodic Death Metal', startTime: 634, endTime: 850, videoID: 'VEhjvaFVrak' },
+    { title: 'Jars', artist: 'The Black Dahlia Murder', album: 'Nightbringers', genre: 'Melodic Death Metal', startTime: 850, endTime: 1067, videoID: 'VEhjvaFVrak' },
+    { title: 'Kings of the Nightworld', artist: 'The Black Dahlia Murder', album: 'Nightbringers', genre: 'Melodic Death Metal', startTime: 1067, endTime: 1260, videoID: 'VEhjvaFVrak' },
+    { title: 'Catacomb Hecatomb', artist: 'The Black Dahlia Murder', album: 'Nightbringers', genre: 'Melodic Death Metal', startTime: 1260, endTime: 1478, videoID: 'VEhjvaFVrak' },
+    { title: 'As Good as Dead', artist: 'The Black Dahlia Murder', album: 'Nightbringers', genre: 'Melodic Death Metal', startTime: 1478, endTime: 1693, videoID: 'VEhjvaFVrak' },
+    { title: 'The Lonely Deceased', artist: 'The Black Dahlia Murder', album: 'Nightbringers', genre: 'Melodic Death Metal', startTime: 1693, endTime: 1999, videoID: 'VEhjvaFVrak' },
     //  Nocturnal
     { title: 'Everything Went Black', artist: 'The Black Dahlia Murder', album: 'Nocturnal', genre: 'Melodic Death Metal', startTime: 1, endTime: 197, videoID: '00E6RTJh2Ro' },
     { title: 'What a Horrible Night To Have a Curse', artist: 'The Black Dahlia Murder', album: 'Nocturnal', genre: 'Melodic Death Metal', startTime: 197, endTime: 427, videoID: '00E6RTJh2Ro' },
@@ -49,12 +59,12 @@ export const SONGS: Song[] = [
     //David Maxim Micic
     //  Who Bit the Moon
     { title: 'Milk Tooth', artist: 'David Maxim Micic', album: 'Who Bit the Moon', genre: 'Progressive Rock', startTime: 1, endTime: 108, videoID: '1oiFhYl7kLM' },
-    { title: 'Someone Else\'s Hat', artist: 'David Maxim Micic', album: 'Who Bit the Moon', genre: 'Progressive Rock', startTime: 108, endTime: 480, videoID: '1oiFhYl7kLM'},
+    { title: 'Someone Else\'s Hat', artist: 'David Maxim Micic', album: 'Who Bit the Moon', genre: 'Progressive Rock', startTime: 108, endTime: 480, videoID: '1oiFhYl7kLM' },
     { title: 'Living Room', artist: 'David Maxim Micic', album: 'Who Bit the Moon', genre: 'Progressive Rock', startTime: 480, endTime: 781, videoID: '1oiFhYl7kLM' },
     { title: 'Beaver Moon', artist: 'David Maxim Micic', album: 'Who Bit the Moon', genre: 'Progressive Rock', startTime: 781, endTime: 841, videoID: '1oiFhYl7kLM' },
     { title: '687 Days', artist: 'David Maxim Micic', album: 'Who Bit the Moon', genre: 'Progressive Rock', startTime: 841, endTime: 1160, videoID: '1oiFhYl7kLM' },
     { title: 'Damar', artist: 'David Maxim Micic', album: 'Who Bit the Moon', genre: 'Progressive Rock', startTime: 1160, endTime: 1508, videoID: '1oiFhYl7kLM' },
-    { title: 'Nobody\'s Perfect', artist: 'David Maxim Micic', album: 'Who Bit the Moon', genre: 'Progressive Rock', startTime: 1508, endTime: 1592, videoID: '1oiFhYl7kLM'},
+    { title: 'Nobody\'s Perfect', artist: 'David Maxim Micic', album: 'Who Bit the Moon', genre: 'Progressive Rock', startTime: 1508, endTime: 1592, videoID: '1oiFhYl7kLM' },
     { title: 'When She Crafts', artist: 'David Maxim Micic', album: 'Who Bit the Moon', genre: 'Progressive Rock', startTime: 1592, endTime: 1690, videoID: '1oiFhYl7kLM' },
     { title: 'Who Bit the Moon', artist: 'David Maxim Micic', album: 'Who Bit the Moon', genre: 'Progressive Rock', startTime: 1690, endTime: 2298, videoID: '1oiFhYl7kLM' },
 
@@ -108,7 +118,7 @@ export const SONGS: Song[] = [
     { title: 'Oroborus', artist: 'Gojira', album: 'The Way of All Flesh', genre: 'Death Metal', startTime: 1, endTime: 321, videoID: 'JuAb8gkxF-s' },
     { title: 'Toxic Garbage Island', artist: 'Gojira', album: 'The Way of All Flesh', genre: 'Death Metal', startTime: 321, endTime: 568, videoID: 'JuAb8gkxF-s' },
     { title: 'A Sight to Behold', artist: 'Gojira', album: 'The Way of All Flesh', genre: 'Death Metal', startTime: 568, endTime: 877, videoID: 'JuAb8gkxF-s' },
-    { title: 'Yama\'s Messengers', artist: 'Gojira', album: 'The Way of All Flesh', genre: 'Death Metal', startTime: 877, endTime: 1122, videoID: 'JuAb8gkxF-s'},
+    { title: 'Yama\'s Messengers', artist: 'Gojira', album: 'The Way of All Flesh', genre: 'Death Metal', startTime: 877, endTime: 1122, videoID: 'JuAb8gkxF-s' },
     { title: 'The Silver Cord (instrumental)', artist: 'Gojira', album: 'The Way of All Flesh', genre: 'Death Metal', startTime: 1122, endTime: 1273, videoID: 'JuAb8gkxF-s' },
     { title: 'All the Tears', artist: 'Gojira', album: 'The Way of All Flesh', genre: 'Death Metal', startTime: 1273, endTime: 1494, videoID: 'JuAb8gkxF-s' },
     { title: 'Adoration for None (ft. Randy Blythe)', artist: 'Gojira', album: 'The Way of All Flesh', genre: 'Death Metal', startTime: 1494, endTime: 1873, videoID: 'JuAb8gkxF-s' },
@@ -202,6 +212,15 @@ export const SONGS: Song[] = [
     { title: 'The Right to Go Insane', artist: 'Megadeth', album: 'Endgame', genre: 'Thrash Metal', startTime: 17, endTime: 234, videoID: 'm20sJNgZ17U' },
 
     //Metallica
+    //  Master of Puppets
+    { title: 'Battery', artist: 'Metallica', album: 'Master of Puppets', genre: 'Thrash Metal', startTime: 1, endTime: 309, videoID: '8PNxO_jM_ck' },
+    { title: 'Master of Puppets', artist: 'Metallica', album: 'Master of Puppets', genre: 'Thrash Metal', startTime: 309, endTime: 824, videoID: '8PNxO_jM_ck' },
+    { title: 'The Thing That Should Not Be', artist: 'Metallica', album: 'Master of Puppets', genre: 'Thrash Metal', startTime: 824, endTime: 1220, videoID: '8PNxO_jM_ck' },
+    { title: 'Welcome Home (Sanitarium)', artist: 'Metallica', album: 'Master of Puppets', genre: 'Thrash Metal', startTime: 1220, endTime: 1608, videoID: '8PNxO_jM_ck' },
+    { title: 'Disposable Heroes', artist: 'Metallica', album: 'Master of Puppets', genre: 'Thrash Metal', startTime: 1608, endTime: 2107, videoID: '8PNxO_jM_ck' },
+    { title: 'Leper Messiah', artist: 'Metallica', album: 'Master of Puppets', genre: 'Thrash Metal', startTime: 2107, endTime: 2456, videoID: '8PNxO_jM_ck' },
+    { title: 'Orion', artist: 'Metallica', album: 'Master of Puppets', genre: 'Thrash Metal', startTime: 2456, endTime: 2974, videoID: '8PNxO_jM_ck' },
+    { title: 'Damage Inc.', artist: 'Metallica', album: 'Master of Puppets', genre: 'Thrash Metal', startTime: 2974, endTime: 3287, videoID: '8PNxO_jM_ck' },
     //  Ride the Lightning
     { title: 'Fight Fire With Fire', artist: 'Metallica', album: 'Ride the Lightning', genre: 'Thrash Metal', startTime: 1, endTime: 280, videoID: 'OhT0g9jULpw' },
     { title: 'Ride the Lightning', artist: 'Metallica', album: 'Ride the Lightning', genre: 'Thrash Metal', startTime: 280, endTime: 673, videoID: 'OhT0g9jULpw' },
@@ -275,5 +294,51 @@ export const SONGS: Song[] = [
     { title: 'Fall Again', artist: 'Tremonti', album: 'Cauterize', genre: 'Metal', startTime: 1545, endTime: 1833, videoID: 'uEFEPTxn8B8' },
     { title: 'Tie the Noose', artist: 'Tremonti', album: 'Cauterize', genre: 'Metal', startTime: 1833, endTime: 2043, videoID: 'uEFEPTxn8B8' },
     { title: 'Sympathy', artist: 'Tremonti', album: 'Cauterize', genre: 'Metal', startTime: 2043, endTime: 2303, videoID: 'uEFEPTxn8B8' },
-    { title: 'Providence', artist: 'Tremonti', album: 'Cauterize', genre: 'Metal', startTime: 2303, endTime: 2648, videoID: 'uEFEPTxn8B8' }
+    { title: 'Providence', artist: 'Tremonti', album: 'Cauterize', genre: 'Metal', startTime: 2303, endTime: 2648, videoID: 'uEFEPTxn8B8' },
+
+    //Various
+    //  It Came from the 80\'s - Vol 2
+    { title: 'It Came from the 80\'s - Vol 2 (Full Mix)', artist: 'Various Artists', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: null, endTime: null, videoID: 'NyfL9LC1DC4' },
+    { title: 'Wave Rider', artist: 'Isidor', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 1, endTime: 219, videoID: 'NyfL9LC1DC4' },
+    { title: 'Crimewave 2', artist: 'Mega Drive', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 219, endTime: 400, videoID: 'NyfL9LC1DC4' },
+    { title: 'Launch Disintegration', artist: 'Tonebox', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 400, endTime: 712, videoID: 'NyfL9LC1DC4' },
+    { title: 'Occult', artist: 'ALEX', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 712, endTime: 937, videoID: 'NyfL9LC1DC4' },
+    { title: 'Celestial Breakdown', artist: 'Tonebox', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 937, endTime: 1008, videoID: 'NyfL9LC1DC4' },
+    { title: 'Cyborg Chase', artist: 'Toxxify', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 1008, endTime: 1147, videoID: 'NyfL9LC1DC4' },
+    { title: 'Phantom Planet', artist: 'Nightcrawler', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 1147, endTime: 1393, videoID: 'NyfL9LC1DC4' },
+    { title: 'Soul Siphon', artist: 'Daniel Deluxe', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 1393, endTime: 1557, videoID: 'NyfL9LC1DC4' },
+    { title: 'Futurehell', artist: 'DevilRazor', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 1557, endTime: 1700, videoID: 'NyfL9LC1DC4' },
+    { title: 'Trick R Treat', artist: 'Raydar', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 1700, endTime: 2156, videoID: 'NyfL9LC1DC4' },
+    { title: 'Face Me', artist: 'Ace Buchannon', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 2156, endTime: 2342, videoID: 'NyfL9LC1DC4' },
+    { title: 'Machine Uprising', artist: 'ABIIIISMO', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 2342, endTime: 2555, videoID: 'NyfL9LC1DC4' },
+    { title: 'Electrocutioner', artist: 'Arcade Summer', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 2555, endTime: 2765, videoID: 'NyfL9LC1DC4' },
+    { title: 'Phantasm Theme', artist: 'Nightcrawler', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 2765, endTime: 2891, videoID: 'NyfL9LC1DC4' },
+    { title: 'Screams & Whispers', artist: 'Dance with the Dead', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 2891, endTime: 3170, videoID: 'NyfL9LC1DC4' },
+    { title: 'Elevn', artist: 'Escape the Matter', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 3170, endTime: 3428, videoID: 'NyfL9LC1DC4' },
+    { title: 'Elevn (Remix)', artist: 'The Fog', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 3428, endTime: 3634, videoID: 'NyfL9LC1DC4' },
+    { title: 'Riot', artist: 'Dance with the Dead', album: 'It Came from the 80\'s - Vol 2', genre: 'Retro Darkwave', startTime: 3634, endTime: 3811, videoID: 'NyfL9LC1DC4' },
+    //  It Came from the 80\'s - Vol 5
+    { title: 'It Came from the 80\'s - Vol 5 (Full Mix)', artist: 'Various Artists', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: null, endTime: null, videoID: 'bnefm57d7z4' },
+    { title: 'Sacrifice (Daniel Deluxe Remix)', artist: 'Tokyo Rose', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 1, endTime: 261, videoID: 'bnefm57d7z4' },
+    { title: 'The Chase', artist: 'Tonebox', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 261, endTime: 447, videoID: 'bnefm57d7z4' },
+    { title: 'Geist', artist: 'Mega Drive', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 447, endTime: 680, videoID: 'bnefm57d7z4' },
+    { title: 'Midnight Terror', artist: 'Ethan Red', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 680, endTime: 919, videoID: 'bnefm57d7z4' },
+    { title: 'Black Magic', artist: 'ALEX', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 919, endTime: 1042, videoID: 'bnefm57d7z4' },
+    { title: 'Blood Oath Feat. WVLFPAKT', artist: 'Tokyo Rose', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 1042, endTime: 1153, videoID: 'bnefm57d7z4' },
+    { title: 'That Fucking Nobody is John Wick', artist: 'Maximum Overdrive', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 1153, endTime: 1368, videoID: 'bnefm57d7z4' },
+    { title: 'Mega Nova', artist: 'Justin Geer', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 1368, endTime: 1627, videoID: 'bnefm57d7z4' },
+    { title: 'Alien Attack #2', artist: 'Johnny Ola', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 1627, endTime: 1815, videoID: 'bnefm57d7z4' },
+    { title: 'Leather Apron', artist: 'POLYTÆM', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 1815, endTime: 2014, videoID: 'bnefm57d7z4' },
+    { title: 'NATHAN DANDY', artist: 'NATHAN DANDY', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 2014, endTime: 2217, videoID: 'bnefm57d7z4' },
+    { title: 'Occult II', artist: 'ALEX ', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 2217, endTime: 2292, videoID: 'bnefm57d7z4' },
+    { title: 'Ragnarok', artist: 'The Outrider', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 2292, endTime: 2457, videoID: 'bnefm57d7z4' },
+    { title: 'Dream Hacker', artist: 'Solar Storm', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 2457, endTime: 2658, videoID: 'bnefm57d7z4' },
+    { title: 'Hyper Alloy', artist: 'Grave Slayer', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 2658, endTime: 2810, videoID: 'bnefm57d7z4' },
+    { title: 'Star Eater (Starfounder Remix)', artist: 'Daniel Deluxe', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 2810, endTime: 2978, videoID: 'bnefm57d7z4' },
+    { title: 'Suspiria', artist: 'Super Awesome', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 2978, endTime: 3184, videoID: 'bnefm57d7z4' },
+    { title: 'The Exorcism Theme (Re-Work)', artist: 'The Starfighter', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 3184, endTime: 3324, videoID: 'bnefm57d7z4' },
+    { title: 'Cyber War', artist: 'Garth Knight', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 3324, endTime: 3542, videoID: 'bnefm57d7z4' },
+    { title: 'Garbage Day', artist: 'Slvmber', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 3542, endTime: 3614, videoID: 'bnefm57d7z4' },
+    { title: 'Masked Death', artist: 'Volkor X', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 3614, endTime: 3955, videoID: 'bnefm57d7z4' },
+    { title: 'Skeletons in the Attic', artist: 'Dance with the Dead', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 3955, endTime: 4216, videoID: 'bnefm57d7z4' }
 ];
