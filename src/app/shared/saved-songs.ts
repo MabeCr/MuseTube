@@ -340,5 +340,25 @@ export const SONGS: Song[] = [
     { title: 'Cyber War', artist: 'Garth Knight', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 3324, endTime: 3542, videoID: 'bnefm57d7z4' },
     { title: 'Garbage Day', artist: 'Slvmber', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 3542, endTime: 3614, videoID: 'bnefm57d7z4' },
     { title: 'Masked Death', artist: 'Volkor X', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 3614, endTime: 3955, videoID: 'bnefm57d7z4' },
-    { title: 'Skeletons in the Attic', artist: 'Dance with the Dead', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 3955, endTime: 4216, videoID: 'bnefm57d7z4' }
+    { title: 'Skeletons in the Attic', artist: 'Dance with the Dead', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 3955, endTime: 4216, videoID: 'bnefm57d7z4' },
+    //Periphery Mix
+    { title: 'Letter Experiment', artist: 'Periphery', album: 'P1', genre: 'Progressive Metal', startTime: 1, endTime: 411, videoID: '4luh8j8AQbU' },
+    { title: 'All New Materials', artist: 'Periphery', album: 'P1', genre: 'Progressive Metal', startTime: 1, endTime: 321, videoID: '6GfIoi9eG0A' },
+    { title: 'Buttersnips', artist: 'Periphery', album: 'P1', genre: 'Progressive Metal', startTime: 1, endTime: 354, videoID: '4ZjEwB-fx3Q' },
+    { title: 'Zyglrox', artist: 'Periphery', album: 'P1', genre: 'Progressive Metal', startTime: 1, endTime: 307, videoID: 'TiwzdGjskwc' },
+    { title: 'Racecar', artist: 'Periphery', album: 'P1', genre: 'Progressive Metal', startTime: 1, endTime: 921, videoID: 'OZwCQrxceaI' },
+    { title: 'Have A Blast', artist: 'Periphery', album: 'P2', genre: 'Progressive Metal', startTime: 1, endTime: 356, videoID: 'L6c8Cl3Hka0' },
+    { title: 'Scarlet', artist: 'Periphery', album: 'P2', genre: 'Progressive Metal', startTime: 1, endTime: 248, videoID: 'pWtKpoRYJV8' },
+    { title: 'Luck As A Constant', artist: 'Periphery', album: 'P2', genre: 'Progressive Metal', startTime: 1, endTime: 364, videoID: 'G8nM0LTxTOo' },
+    { title: 'Erised', artist: 'Periphery', album: 'P2', genre: 'Progressive Metal', startTime: 1, endTime: 373, videoID: 'khACKq23bC8' },
+    { title: 'Mile Zero', artist: 'Periphery', album: 'P2', genre: 'Progressive Metal', startTime: 1, endTime: 331, videoID: 'dz3E_JNW4oU' },
+    { title: 'Marigold', artist: 'Periphery', album: 'P3', genre: 'Progressive Metal', startTime: 1, endTime: 331, videoID: 'rmtU2WJfPgU' },
+    { title: 'The Way The News Goes...', artist: 'Periphery', album: 'P3', genre: 'Progressive Metal', startTime: 1, endTime: 303, videoID: 'pGLuKRVX-J4' },
+    { title: 'Absolomb', artist: 'Periphery', album: 'P3', genre: 'Progressive Metal', startTime: 1, endTime: 463, videoID: 'gdP3O8L_MV4' },
+    { title: 'Prayer Position', artist: 'Periphery', album: 'P3', genre: 'Progressive Metal', startTime: 1, endTime: 276, videoID: '91eAE7GMBBk' },
+    { title: 'Captain On', artist: 'Periphery', album: 'Icarus EP', genre: 'Progressive Metal', startTime: 1, endTime: 191, videoID: '3jkaUUzugdY' },
+    { title: 'Eureka!', artist: 'Periphery', album: 'Icarus EP', genre: 'Progressive Metal', startTime: 1, endTime: 316, videoID: '62D2d7ZWyxA' },
+    { title: 'The Summer Jam', artist: 'Periphery', album: 'Clear EP', genre: 'Progressive Metal', startTime: 1, endTime: 257, videoID: 'fOtinnFWp7Q' },
+    { title: 'Zero', artist: 'Periphery', album: 'Clear EP', genre: 'Progressive Metal', startTime: 1, endTime: 330, videoID: 'ZhihLzDcdIs' },
+    { title: 'Passenger', artist: 'Periphery', album: 'Single', genre: 'Progressive Metal', startTime: 1, endTime: 215, videoID: 'W3Ct_Yg5CuM' }
 ];
