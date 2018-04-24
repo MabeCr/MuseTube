@@ -45,8 +45,8 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
       this.YT = window['YT'];
       this.player = new window['YT'].Player('player', {
         videoId: this.videoID,
-        height: 300,
-        width: 350,
+        height: 250,
+        width: 300,
         playerVars: { 'controls': 1, 'modestbranding': 1, 'rel': 0, 'showinfo': 0 },
         events: {
           'onStateChange': (e) => {
