@@ -11,6 +11,7 @@ export class SongLibraryComponent {
   @Input() currentSongIndex: number = 0;
   @Input() songs: Song[] = [];
   @Input() searchResults: Song[] = [];
+  
   @Output() songChanged = new EventEmitter<number>();
   @Output() searchRequested = new EventEmitter<string>();
 

@@ -154,7 +154,11 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
       for (let i = 0; i < this.searchResults.length; i++) {
         let tempSong = this.searchResults[i];
         if (tempSong.songID === currentSong.songID) {
-          newIndex = this.searchResults[i - 1].songID;
+          if (i == 0) {
+            newIndex = this.searchResults[this.searchResults.length - 1].songID;
+          } else {
+            newIndex = this.searchResults[i - 1].songID;
+          }
         }
       }
     } else {
@@ -181,7 +185,11 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
         for (let i = 0; i < this.searchResults.length; i++) {
           let tempSong = this.searchResults[i];
           if (tempSong.songID === currentSong.songID) {
-            newIndex = this.searchResults[i + 1].songID;
+            if (i == this.searchResults.length - 1) {
+              newIndex = this.searchResults[0].songID;
+            } else {
+              newIndex = this.searchResults[i + 1].songID;
+            }
           }
         }
       } else {
