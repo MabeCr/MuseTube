@@ -13,9 +13,9 @@
       <th>Genre</th>
       <th>Artist</th>
     </tr>
-    <tr *ngFor="let song of songs; let i = index" [ngClass]="{'current-song-row': isCurrentSong(i)}">
+    <tr *ngFor="let song of songs; let i = index" [ngClass]="{'current-song-row': isCurrentSong(song.songID)}">
       <td class="playColumn">
-        <button class="playButton" (click)="onChangeSong(i)">Play</button>
+        <button class="playButton" (click)="onChangeSong(song.songID)">Play</button>
       </td>
       <td class="queueColumn">
         <button class="queueButton">Queue</button>
@@ -36,9 +36,9 @@
       <th>Genre</th>
       <th>Artist</th>
     </tr>
-    <tr *ngFor="let song of searchResults; let i = index" [ngClass]="{'current-song-row': isCurrentSong(i)}">
+    <tr *ngFor="let song of searchResults; let i = index" [ngClass]="{'current-song-row': isCurrentSong(song.songID)}">
       <td class="playColumn">
-        <button class="playButton" (click)="onChangeSong(i)">Play</button>
+        <button class="playButton" (click)="onChangeSong(song.songID)">Play</button>
       </td>
       <td class="queueColumn">
         <button class="queueButton">Queue</button>
