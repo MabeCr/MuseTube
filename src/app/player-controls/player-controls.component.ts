@@ -20,8 +20,8 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
   statusString = 'Loading';
   isPlayerLoaded = false;
   private hasLoadedSongStarted = false;
-
-  private shuffle: boolean = false;
+  shuffle: boolean = false;
+  currentSongTime: number = 0;
 
   constructor(private titleService: Title, private zone: NgZone) {
   }
@@ -61,6 +61,10 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
           'onReady': (e) => {
             this.zone.run(() => {
               this.isPlayerLoaded = true;
+              //Update the current song time from the player every 1/10 second.
+              let timeupdater = setInterval(() => {
+                this.currentSongTime = this.player.getCurrentTime();
+              }, 100);
               this.player.setVolume(60);
               this.loadSong(this.currentSong);
             }
@@ -117,10 +121,6 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
         }
         break;
     };
-  }
-
-  cleanTime() {
-    return Math.round(this.player.getCurrentTime())
   }
 
   onPlayerError(event) {

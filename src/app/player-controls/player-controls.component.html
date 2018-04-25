@@ -6,11 +6,15 @@
   </div>
   <div id="controlButtons">
     <h2 *ngIf="shuffle">Shuffle Active</h2>
-    <button (click)="onPlayPrevious()"><<</button>
-    <button (click)="onPlayPause()">{{ getString() }}</button>
-    <button (click)="onPlayNext()">>></button>
-    <button (click)="onVolumeUp()">Volume Up</button>
-    <button (click)="onVolumeDown()">Volume Down</button>
-    <button (click)="onToggleShuffle()">Shuffle</button>
+    <button (click)="onPlayPrevious()">
+      <<</button>
+        <button (click)="onPlayPause()">{{ getString() }}</button>
+        <button (click)="onPlayNext()">>></button>
+        <button (click)="onVolumeUp()">Volume Up</button>
+        <button (click)="onVolumeDown()">Volume Down</button>
+        <button (click)="onToggleShuffle()">Shuffle</button>
   </div>
+  <span>{{currentSongTime | minuteSeconds}}</span>
+  <mat-slider [min]="currentSong.startTime" [max]="currentSong.endTime" step="1" [value]="currentSongTime"></mat-slider>
+  <span>{{(currentSong.endTime - currentSong.startTime) | minuteSeconds}}</span>
 </div>

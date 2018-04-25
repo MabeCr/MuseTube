@@ -15,3 +15,7 @@
 button {
     margin: auto 2px;
 }
+
+mat-slider {
+    width: 25%;
+}
