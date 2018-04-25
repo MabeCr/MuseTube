@@ -22,7 +22,7 @@
         <button (click)="onVolumeDown()">Volume Down</button>
         <button (click)="onToggleShuffle()">Shuffle</button>
   </div>
-  <span>{{currentSongTime | minuteSeconds}}</span>
+  <span>{{currentSongTime - currentSong.startTime | minuteSeconds}}</span>
   <mat-slider [min]="currentSong.startTime" [max]="currentSong.endTime" step="1" [value]="currentSongTime"></mat-slider>
   <span>{{(currentSong.endTime - currentSong.startTime) | minuteSeconds}}</span>
 </div>
