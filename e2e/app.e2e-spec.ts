@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('you-muse App', () => {
+describe('muse-tube App', () => {
   let page: AppPage;
 
   beforeEach(() => {

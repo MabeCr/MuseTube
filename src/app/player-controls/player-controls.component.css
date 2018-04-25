@@ -1,15 +1,37 @@
 #wrapper {
-    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(58, 58, 58);
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #player {
-    float: left;
 }
 
 #songInfo {
-    float: right;
+    padding: 0 10px;
+    margin-left: 10px;
+    width: 40%;
     color: #D7CEC7;
-    font-size: 130%;
+    font-size: 120%;
+}
+
+#songInfo h1 {
+    margin: 12px 0;
+}
+
+#songInfo h2 {
+    margin: 12px 0;
+}
+
+#songQueue {
+    background: brown;
+    width: 30%;
 }
 
 button {

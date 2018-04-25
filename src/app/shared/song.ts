@@ -1,5 +1,6 @@
 export class Song {
     
+    songID?: number
     title: string
     artist: string
     album: string

@@ -27,9 +27,6 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
   }
 
   get currentSong(): Song {
-    if (this.searchResults.length > 0) {
-      return this.searchResults[this.currentSongIndex];
-    }
     return this.songs[this.currentSongIndex];
   }
 
@@ -48,8 +45,8 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
       this.YT = window['YT'];
       this.player = new window['YT'].Player('player', {
         videoId: this.videoID,
-        height: 300,
-        width: 350,
+        height: 250,
+        width: 300,
         playerVars: { 'controls': 1, 'modestbranding': 1, 'rel': 0, 'showinfo': 0 },
         events: {
           'onStateChange': (e) => {
@@ -80,11 +77,7 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
     if (this.isPlayerLoaded && changes.currentSongIndex) {
       let newSongIndex = changes.currentSongIndex.currentValue as number;
       let currentSong: Song;
-      if (this.searchResults.length > 0) {
-        currentSong = this.searchResults[newSongIndex];
-      } else {
-        currentSong = this.songs[newSongIndex];
-      }
+      currentSong = this.songs[newSongIndex];
       this.loadSong(currentSong);
     }
   }
@@ -93,7 +86,7 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
     // console.log(event)
     switch (event.data) {
       case window['YT'].PlayerState.PLAYING:
-        console.log("PLAYING");
+        //console.log("PLAYING");
         this.statusString = 'Playing';
         this.hasLoadedSongStarted = true;
         // if (this.cleanTime() == 0) {
@@ -104,7 +97,7 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
         this.titleService.setTitle(this.currentSong.title + ' - ' + this.currentSong.artist);
         break;
       case window['YT'].PlayerState.PAUSED:
-        console.log("PAUSED");
+        //console.log("PAUSED");
         if (this.player.getDuration() - this.player.getCurrentTime() != 0) {
           // console.log('paused' + ' @ ' + this.cleanTime());
 
@@ -113,7 +106,7 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
         this.titleService.setTitle('Paused: ' + this.currentSong.title + ' - ' + this.currentSong.artist);
         break;
       case window['YT'].PlayerState.ENDED:
-        console.log("ENDED");
+        //console.log("ENDED");
         //Workaround strange bug when video ends at manual end time, calls ENDED twice.
         //Only load next song once current song has started.
         if (this.hasLoadedSongStarted) {
@@ -155,12 +148,28 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
   }
 
   onPlayPrevious() {
-    this.songChanged.emit(this.currentSongIndex - 1);
+    let newIndex: number;
+    let currentSong = this.songs[this.currentSongIndex];
+    if (this.searchResults.length > 0) {
+      for (let i = 0; i < this.searchResults.length; i++) {
+        let tempSong = this.searchResults[i];
+        if (tempSong.songID === currentSong.songID) {
+          if (i == 0) {
+            newIndex = this.searchResults[this.searchResults.length - 1].songID;
+          } else {
+            newIndex = this.searchResults[i - 1].songID;
+          }
+        }
+      }
+    } else {
+      newIndex = this.currentSongIndex - 1;
+    }
+    this.songChanged.emit(newIndex);
   }
 
   onPlayNext() {
+    let newIndex: number;
     if (this.shuffle) {
-      let newIndex: number;
       if (this.searchResults.length > 0) {
         newIndex = Math.random() * (this.searchResults.length - 1);
       } else {
@@ -169,11 +178,24 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
       if (newIndex === this.currentSongIndex) {
         newIndex = newIndex + 1;
       }
-      console.log(this.songs.length);
-      console.log(Math.floor(newIndex));
-      this.songChanged.emit(Math.floor(newIndex));
+      newIndex = Math.floor(newIndex);
     } else {
-      this.songChanged.emit(this.currentSongIndex + 1);
+      let currentSong = this.songs[this.currentSongIndex];
+      if (this.searchResults.length > 0) {
+        for (let i = 0; i < this.searchResults.length; i++) {
+          let tempSong = this.searchResults[i];
+          if (tempSong.songID === currentSong.songID) {
+            if (i == this.searchResults.length - 1) {
+              newIndex = this.searchResults[0].songID;
+            } else {
+              newIndex = this.searchResults[i + 1].songID;
+            }
+          }
+        }
+      } else {
+        newIndex = this.currentSongIndex + 1;
+      }
+      this.songChanged.emit(newIndex);
     }
   }
 

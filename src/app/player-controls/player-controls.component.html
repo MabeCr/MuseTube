@@ -2,8 +2,16 @@
   <div id="player"></div>
 
   <div id="songInfo">
-    <h1>Now {{ statusString }}: {{ currentSong.title }} by {{ currentSong.artist }}</h1>
+    <h1>Now {{ statusString }}:</h1>
+    <h1>Title: {{ currentSong.title }}</h1>
+    <h2>Artist: {{ currentSong.artist }}</h2>
+    <h2>Album: {{ currentSong.album }}</h2>
   </div>
+
+  <div id="songQueue">
+    <h1>This is a placeholder for the song queue</h1>
+  </div>
+
   <div id="controlButtons">
     <h2 *ngIf="shuffle">Shuffle Active</h2>
     <button (click)="onPlayPrevious()">

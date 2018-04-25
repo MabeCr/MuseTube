@@ -29,8 +29,8 @@ export const SONGS: Song[] = [
     { title: 'Exploder', artist: 'Audioslave', album: 'Audioslave', genre: 'Rock', startTime: 2254, endTime: 2459, videoID: 'eCE2cjdnTl8' },
     { title: 'Hypnotize', artist: 'Audioslave', album: 'Audioslave', genre: 'Rock', startTime: 2459, endTime: 2664, videoID: 'eCE2cjdnTl8' },
     { title: 'Bring Em Back Alive', artist: 'Audioslave', album: 'Audioslave', genre: 'Rock', startTime: 2664, endTime: 2994, videoID: 'eCE2cjdnTl8' },
-    { title: 'Light My Way', artist: 'Audioslave', album: 'Audioslave', genre: 'Rock', startTime: 2994, endTime: 3295, videoID: 'eCE2cjdnTl8' },
-    { title: 'Getaway Car', artist: 'Audioslave', album: 'Audioslave', genre: 'Rock', startTime: 3295, endTime: 3592, videoID: 'eCE2cjdnTl8' },
+    { title: 'Light My Way', artist: 'Audioslave', album: 'Audioslave', genre: 'Rock', startTime: 2994, endTime: 3309, videoID: 'eCE2cjdnTl8' },
+    { title: 'Getaway Car', artist: 'Audioslave', album: 'Audioslave', genre: 'Rock', startTime: 3309, endTime: 3592, videoID: 'eCE2cjdnTl8' },
     { title: 'The Last Remaining Light', artist: 'Audioslave', album: 'Audioslave', genre: 'Rock', startTime: 3592, endTime: 3927, videoID: 'eCE2cjdnTl8' },
 
     //The Black Dahlia Murder
@@ -140,14 +140,14 @@ export const SONGS: Song[] = [
     { title: 'Meridian', artist: 'Intervals', album: 'The Shape of Color', genre: 'Instrumental Rock', startTime: null, endTime: null, videoID: 'nmLEg7pykKE' },
     { title: 'Libra', artist: 'Intervals', album: 'The Shape of Color', genre: 'Instrumental Rock', startTime: null, endTime: null, videoID: 'Fx8c3CuUxw0' },
     //  The Way Forward
-    { title: 'Touch and Go', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: 1, endTime: 262, videoID: 'Eyb04KuNweo' },
-    { title: 'Impulsively Responsible', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: 262, endTime: 494, videoID: 'Eyb04KuNweo' },
-    { title: 'A Different Light', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: 494, endTime: 770, videoID: 'Eyb04KuNweo' },
-    { title: 'By Far and Away', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: 770, endTime: 1020, videoID: 'Eyb04KuNweo' },
-    { title: 'Belvedere', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: 1020, endTime: 1343, videoID: 'Eyb04KuNweo' },
-    { title: 'Rubicon Artist', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: 1343, endTime: 1622, videoID: 'Eyb04KuNweo' },
-    { title: 'The Waterfront', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: 1622, endTime: 1905, videoID: 'Eyb04KuNweo' },
-    { title: 'Leave No Stone', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: 1905, endTime: 2237, videoID: 'Eyb04KuNweo' },
+    { title: 'Touch and Go', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: null, endTime: null, videoID: '-Yrp2e21_Tc' },
+    { title: 'Impulsively Responsible', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: null, endTime: null, videoID: 'piyFb0d6yAs' },
+    { title: 'A Different Light', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: null, endTime: null, videoID: 'cZJgb-UjkcM' },
+    { title: 'By Far and Away', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: null, endTime: null, videoID: 'BsUUG3Aq9Vc' },
+    { title: 'Belvedere', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: null, endTime: null, videoID: 'Htw4tnmR7hU' },
+    { title: 'Rubicon Artist', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: null, endTime: null, videoID: '8RsysaNCy5w' },
+    { title: 'The Waterfront', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: null, endTime: null, videoID: 'sADHe4wc17E' },
+    { title: 'Leave No Stone', artist: 'Intervals', album: 'The Way Forward', genre: 'Instrumental Rock', startTime: null, endTime: null, videoID: '5yUp_RooDFw' },
 
     //Jeff Loomis
     //  Zero Order Phase
@@ -269,19 +269,19 @@ export const SONGS: Song[] = [
 
     //Sithu Aye
     //  Set Course for Andromeda
-    { title: 'Space Cadet', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 1, endTime: 113, videoID: 'mQsAmJUCcg4-s' },
-    { title: 'Set Course for Andromeda!!!', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 113, endTime: 631, videoID: 'mQsAmJUCcg4-s' },
-    { title: 'Constants and Variables', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 631, endTime: 1139, videoID: 'mQsAmJUCcg4-s' },
-    { title: 'Spiral', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 1139, endTime: 1399, videoID: 'mQsAmJUCcg4-s' },
-    { title: 'Beyond the Boundary', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 1399, endTime: 1913, videoID: 'mQsAmJUCcg4-s' },
-    { title: 'Transient Transistors', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 1913, endTime: 2389, videoID: 'mQsAmJUCcg4-s' },
-    { title: '...We Actually Made it to Andromeda!!!', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 2389, endTime: 2766, videoID: 'mQsAmJUCcg4-s' },
-    { title: 'The Andromedan Pt 1: A Single Step', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 2766, endTime: 3088, videoID: 'mQsAmJUCcg4-s' },
-    { title: 'The Andromedan Pt 2: Mystic Village', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 3088, endTime: 3480, videoID: 'mQsAmJUCcg4-s' },
-    { title: 'The Andromedan Pt 3: Trials of the Elements', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 3480, endTime: 3725, videoID: 'mQsAmJUCcg4-s' },
-    { title: 'The Andromedan Pt 4: The Darkness Within', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 3725, endTime: 3884, videoID: 'mQsAmJUCcg4-s' },
-    { title: 'The Andromedan Pt 5: Rebirth', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 3884, endTime: 4255, videoID: 'mQsAmJUCcg4-s' },
-    { title: 'The Andromedan Pt 6: Mother of Creation', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 4255, endTime: 4509, videoID: 'mQsAmJUCcg4-s' },
+    { title: 'Space Cadet', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 1, endTime: 113, videoID: 'mQsAmJUCcg4' },
+    { title: 'Set Course for Andromeda!!!', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 113, endTime: 631, videoID: 'mQsAmJUCcg4' },
+    { title: 'Constants and Variables', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 631, endTime: 1139, videoID: 'mQsAmJUCcg4' },
+    { title: 'Spiral', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 1139, endTime: 1399, videoID: 'mQsAmJUCcg4' },
+    { title: 'Beyond the Boundary', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 1399, endTime: 1913, videoID: 'mQsAmJUCcg4' },
+    { title: 'Transient Transistors', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 1913, endTime: 2389, videoID: 'mQsAmJUCcg4' },
+    { title: '...We Actually Made it to Andromeda!!!', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 2389, endTime: 2766, videoID: 'mQsAmJUCcg4' },
+    { title: 'The Andromedan Pt 1: A Single Step', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 2766, endTime: 3088, videoID: 'mQsAmJUCcg4' },
+    { title: 'The Andromedan Pt 2: Mystic Village', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 3088, endTime: 3480, videoID: 'mQsAmJUCcg4' },
+    { title: 'The Andromedan Pt 3: Trials of the Elements', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 3480, endTime: 3725, videoID: 'mQsAmJUCcg4' },
+    { title: 'The Andromedan Pt 4: The Darkness Within', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 3725, endTime: 3884, videoID: 'mQsAmJUCcg4' },
+    { title: 'The Andromedan Pt 5: Rebirth', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 3884, endTime: 4255, videoID: 'mQsAmJUCcg4' },
+    { title: 'The Andromedan Pt 6: Mother of Creation', artist: 'Sithu Aye', album: 'Set Course for Andromeda', genre: 'Instrumental Progressive Metal', startTime: 4255, endTime: 4509, videoID: 'mQsAmJUCcg4' },
 
     //Tremonti
     //  Cauterize
@@ -341,6 +341,7 @@ export const SONGS: Song[] = [
     { title: 'Garbage Day', artist: 'Slvmber', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 3542, endTime: 3614, videoID: 'bnefm57d7z4' },
     { title: 'Masked Death', artist: 'Volkor X', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 3614, endTime: 3955, videoID: 'bnefm57d7z4' },
     { title: 'Skeletons in the Attic', artist: 'Dance with the Dead', album: 'It Came from the 80\'s - Vol 5', genre: 'Retro Darkwave', startTime: 3955, endTime: 4216, videoID: 'bnefm57d7z4' },
+    
     //Periphery Mix
     { title: 'Letter Experiment', artist: 'Periphery', album: 'P1', genre: 'Progressive Metal', startTime: 1, endTime: 411, videoID: '4luh8j8AQbU' },
     { title: 'All New Materials', artist: 'Periphery', album: 'P1', genre: 'Progressive Metal', startTime: 1, endTime: 321, videoID: '6GfIoi9eG0A' },
