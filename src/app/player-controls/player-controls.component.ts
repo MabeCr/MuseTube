@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter, SimpleChanges, OnChange
 import { Song } from './../shared/song';
 import { SongLibraryComponent } from '../song-library/song-library.component';
 import { Title } from '@angular/platform-browser';
+import { MatSliderChange } from '@angular/material';
 
 @Component({
   selector: 'app-player-controls',
@@ -28,6 +29,22 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
 
   get currentSong(): Song {
     return this.songs[this.currentSongIndex];
+  }
+
+  get songProgressBarStartTime(): number {
+    return this.currentSong.startTime ? this.currentSong.startTime : 0;
+  }
+
+  get songProgressBarEndTime(): number {
+    return this.currentSong.endTime ? this.currentSong.endTime : this.player.getDuration();
+  }
+
+  get displayedCurrentTime(): number {
+    return this.currentSongTime - this.songProgressBarStartTime;
+  }
+
+  get displayedEndTime(): number {
+    return this.songProgressBarEndTime - this.songProgressBarStartTime;
   }
 
   init() {
@@ -82,6 +99,11 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
     }
   }
 
+  onSongProgressBarChanged(eventArgs: MatSliderChange) {
+    let newSeekTime = eventArgs.value;
+    this.player.seekTo(newSeekTime, true);
+  }
+
   onPlayerStateChange(event) {
     // console.log(event)
     switch (event.data) {
@@ -89,19 +111,10 @@ export class PlayerControlsComponent implements OnInit, OnChanges {
         //console.log("PLAYING");
         this.statusString = 'Playing';
         this.hasLoadedSongStarted = true;
-        // if (this.cleanTime() == 0) {
-        //   console.log('started ' + this.cleanTime());
-        // } else {
-        //   console.log('playing ' + this.cleanTime())
-        // };
         this.titleService.setTitle(this.currentSong.title + ' - ' + this.currentSong.artist);
         break;
       case window['YT'].PlayerState.PAUSED:
         //console.log("PAUSED");
-        if (this.player.getDuration() - this.player.getCurrentTime() != 0) {
-          // console.log('paused' + ' @ ' + this.cleanTime());
-
-        };
         this.statusString = 'Paused';
         this.titleService.setTitle('Paused: ' + this.currentSong.title + ' - ' + this.currentSong.artist);
         break;

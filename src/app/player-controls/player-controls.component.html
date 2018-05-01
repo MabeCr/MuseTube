@@ -22,7 +22,7 @@
         <button (click)="onVolumeDown()">Volume Down</button>
         <button (click)="onToggleShuffle()">Shuffle</button>
   </div>
-  <span>{{currentSongTime - currentSong.startTime | minuteSeconds}}</span>
-  <mat-slider [min]="currentSong.startTime" [max]="currentSong.endTime" step="1" [value]="currentSongTime"></mat-slider>
-  <span>{{(currentSong.endTime - currentSong.startTime) | minuteSeconds}}</span>
+  <span>{{displayedCurrentTime | minuteSeconds}}</span>
+  <mat-slider [min]="songProgressBarStartTime" [max]="songProgressBarEndTime" step="1" [value]="currentSongTime" (change)="onSongProgressBarChanged($event)"></mat-slider>
+  <span>{{displayedEndTime | minuteSeconds}}</span>
 </div>
